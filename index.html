@@ -1,344 +1,2086 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mohammad Shjjad Patwary | Portfolio</title>
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <!-- FontAwesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Mohammad Shjjad Patwary — Operations, Corporate Admin &amp; IT Management</title>
+  <meta name="description" content="Mohammad Shjjad Patwary | Manager – Operations, Corporate Admin, IT &amp; Inventory with 10+ years of expertise in corporate admin, inventory control, POS integration, and facility governance." />
+  <meta name="keywords" content="Operations Manager, Corporate Administration, IT Manager, Inventory Control, POS Integration, Warehouse Management, Cumilla Cantonment Bangladesh" />
+  <meta name="author" content="Mohammad Shjjad Patwary" />
+
+  <!-- Open Graph / Meta -->
+  <meta property="og:title" content="Mohammad Shjjad Patwary — Operations, IT &amp; Inventory Management" />
+  <meta property="og:description" content="10+ years bridging physical warehouse precision, multi-channel POS synchronization, and digital e-commerce excellence." />
+  <meta property="og:type" content="website" />
+
+  <!-- Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- High-Clarity Modern Fonts: Plus Jakarta Sans (Executive Headings) + Inter (Sharp Body) + JetBrains Mono -->
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-    <!-- Navigation Bar -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="#" class="nav-logo">M.S. Patwary</a>
-            <div class="menu-toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+  <!-- Custom Cursor for Desktop -->
+  <div id="cursor-dot" class="cursor-dot" aria-hidden="true"></div>
+  <div id="cursor-ring" class="cursor-ring" aria-hidden="true"></div>
+
+  <!-- Scroll Progress Indicator -->
+  <div id="scroll-progress" class="scroll-progress" aria-hidden="true"></div>
+
+  <!-- Subtle Ambient Background Mesh -->
+  <div class="ambient-mesh" aria-hidden="true">
+    <div class="mesh-orb mesh-1"></div>
+    <div class="mesh-orb mesh-2"></div>
+    <div class="mesh-orb mesh-3"></div>
+  </div>
+
+  <!-- ──────────────────────────────────────────────
+       HEADER & NAVIGATION (EXECUTIVE TOP BAR)
+  ─────────────────────────────────────────────── -->
+  <header class="site-header" id="site-header">
+    <div class="nav-container">
+      <nav class="nav" id="navbar" aria-label="Main Navigation">
+
+        <!-- Left: Brand Logo & Status -->
+        <a href="#home" class="nav-brand" aria-label="Mohammad Shjjad Patwary Portfolio">
+          <div class="brand-badge">
+            <img src="profile.jpg" alt="Mohammad Shjjad Patwary" class="brand-avatar-img" />
+          </div>
+          <div class="brand-meta">
+            <div class="brand-name-row">
+              <span class="brand-name">Shjjad Patwary</span>
+              <span class="status-indicator" title="Active">
+                <span class="status-dot"></span>
+              </span>
             </div>
-            <ul class="nav-menu">
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#experience" class="nav-link">Experience</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#education" class="nav-link">Education</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-                <li><button id="theme-toggle" class="theme-btn" aria-label="Toggle Theme"><i class="fas fa-moon"></i></button></li>
-            </ul>
+            <span class="brand-role">Senior Operations, Admin &amp; IT</span>
+          </div>
+        </a>
+
+        <!-- Center: Navigation Links Island -->
+        <div class="nav-links-wrapper">
+          <ul class="nav-links" id="nav-links">
+            <li><a href="#about" class="nav-link" data-text="About">About</a></li>
+            <li><a href="#impact" class="nav-link" data-text="Impact">Impact</a></li>
+            <li><a href="#experience" class="nav-link" data-text="Experience">Experience</a></li>
+            <li><a href="#skills" class="nav-link" data-text="Skills">Skills</a></li>
+            <li><a href="#education" class="nav-link" data-text="Credentials">Credentials</a></li>
+            <li><a href="#resume" class="nav-link" data-text="Resume">Resume</a></li>
+            <li><a href="#contact" class="nav-link" data-text="Contact">Contact</a></li>
+          </ul>
         </div>
-    </nav>
 
-    <!-- Hero Section -->
-    <header class="hero">
-        <div class="hero-container">
-            <div class="hero-text">
-                <span class="hero-subtitle">Welcome to my Portfolio</span>
-                <h1 class="hero-title">Mohammad Shjjad Patwary</h1>
-                <h2 class="hero-role">Website, IT & Inventory Operations Manager</h2>
-                <p class="hero-description">
-                    Results-driven operations professional with over 10 years of experience optimizing e-commerce, warehouse, and retail systems. I specialize in bridging the gap between operational processes and technology.
-                </p>
-                <div class="hero-actions">
-                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
-                    <a href="#experience" class="btn btn-secondary">View Experience</a>
+        <!-- Right: Action Controls -->
+        <div class="nav-actions">
+          <!-- Main Header Direct Download CV Shortcut with Dual Options -->
+          <div class="cv-dropdown-wrapper">
+            <button class="nav-shortcut-btn nav-download-btn cv-dropdown-toggle" id="nav-download-cv-btn" type="button" aria-expanded="false" aria-haspopup="true" title="Download Official Executive CV (PDF)">
+              <i class="fas fa-download"></i>
+              <span class="btn-text-full">Download CV</span>
+              <span class="btn-text-mobile">CV</span>
+              <i class="fas fa-chevron-down cv-caret"></i>
+            </button>
+            <div class="cv-dropdown-menu" id="nav-cv-dropdown">
+              <div class="cv-dropdown-header">
+                <div class="cv-dropdown-title-group">
+                  <i class="fas fa-file-arrow-down"></i>
+                  <span class="cv-dropdown-title">Download CV</span>
                 </div>
+                <button type="button" class="cv-dropdown-close-btn" aria-label="Close menu" title="Close">
+                  <i class="fas fa-xmark"></i>
+                </button>
+              </div>
+              <a href="Mohammad_Shjjad_Patwary_Executive_CV.pdf" download="Mohammad_Shjjad_Patwary_Executive_CV.pdf" class="cv-dropdown-item direct-download-link" id="nav-cv-with-photo">
+                <i class="fas fa-id-badge"></i>
+                <div class="dropdown-item-text">
+                  <strong>With Photo</strong>
+                  <span>Executive format with portrait</span>
+                </div>
+              </a>
+              <a href="Mohammad_Shjjad_Patwary_Executive_CV_No_Photo.pdf" download="Mohammad_Shjjad_Patwary_Executive_CV_No_Photo.pdf" class="cv-dropdown-item direct-download-link" id="nav-cv-no-photo">
+                <i class="fas fa-file-alt"></i>
+                <div class="dropdown-item-text">
+                  <strong>Without Photo</strong>
+                  <span>ATS-friendly clean text format</span>
+                </div>
+              </a>
             </div>
-            <div class="hero-stats-card">
-                <div class="stat-item">
-                    <span class="stat-number">10+</span>
-                    <span class="stat-label">Years Experience</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number">95%+</span>
-                    <span class="stat-label">Inventory Accuracy</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number">2000+</span>
-                    <span class="stat-label">SKUs Managed</span>
-                </div>
-            </div>
+          </div>
+
+          <!-- Theme Switcher -->
+          <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle dark and light theme" title="Toggle Theme">
+            <i class="fas fa-circle-half-stroke" id="theme-icon"></i>
+          </button>
+
+          <!-- Primary CTA Button -->
+          <a href="#contact" class="nav-contact-btn">
+            <span>Let's Talk</span>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+
+          <!-- Mobile Hamburger Toggle -->
+          <button class="hamburger-btn" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+            <span class="ham-line"></span>
+            <span class="ham-line"></span>
         </div>
-    </header>
 
-    <!-- About Section -->
-    <section id="about" class="section">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-grid">
-                <div class="about-info">
-                    <p>I possess proven expertise in inventory control, POS integration, and website management, with a strong record of improving accuracy, efficiency, and order fulfillment through modern, technology-driven solutions.</p>
-                    <p>Based in Dhaka, Bangladesh, my background blends deep administrative operation structures with strong IT support capabilities, allowing me to build robust, streamlined workflows for retail and e-commerce platforms.</p>
-                    
-                    <div class="key-achievements">
-                        <h3>Key Accomplishments</h3>
-                        <ul>
-                            <li><i class="fas fa-check-circle"></i> Reduced stock mismatch by over 30%.</li>
-                            <li><i class="fas fa-check-circle"></i> Increased website product upload efficiency by 40% through standardized SKU structures.</li>
-                            <li><i class="fas fa-check-circle"></i> Maintained stable, uninterrupted POS operations across multiple retail outlets.</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="about-quick-details">
-                    <div class="detail-card">
-                        <i class="fas fa-envelope detail-icon"></i>
-                        <div>
-                            <h4>Email</h4>
-                            <p><a href="mailto:shjjadpatwary@gmail.com">shjjadpatwary@gmail.com</a></p>
-                        </div>
-                    </div>
-                    <div class="detail-card">
-                        <i class="fas fa-phone detail-icon"></i>
-                        <div>
-                            <h4>Phone</h4>
-                            <p><a href="tel:+8801737908116">+8801737908116</a></p>
-                        </div>
-                    </div>
-                    <div class="detail-card">
-                        <i class="fas fa-map-marker-alt detail-icon"></i>
-                        <div>
-                            <h4>Location</h4>
-                            <p>Dhaka, Bangladesh</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer" id="mobile-drawer" aria-hidden="true">
+    <div class="drawer-header">
+      <div class="drawer-brand">
+        <div class="drawer-avatar">
+          <img src="profile.jpg" alt="Mohammad Shjjad Patwary" class="drawer-avatar-img" />
         </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience" class="section bg-alt">
-        <div class="container">
-            <h2 class="section-title">Professional Experience</h2>
-            <div class="timeline">
-                
-                <!-- Experience Item 1 -->
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">May 2024 – April 2026</div>
-                    <div class="timeline-content">
-                        <h3>Manager – Website, IT & Inventory Operations</h3>
-                        <span class="timeline-company">Anzaar | Dhaka, Bangladesh</span>
-                        <p class="timeline-summary">Led the end-to-end integration of technical and physical operations, synchronizing retail and digital structures.</p>
-                        <ul class="timeline-details">
-                            <li>Managed end-to-end inventory lifecycle, including stock receiving, transfers, and monitoring.</li>
-                            <li>Maintained accurate warehouse records and coordinated daily stock movements, dispatch, and replenishment.</li>
-                            <li>Synchronized warehouse, retail POS systems, and e-commerce platforms.</li>
-                            <li>Managed daily e-commerce website operations, product updates, internal SEO optimization, and campaign menus.</li>
-                            <li>Supported team enablement, setting up POS systems, training staff, and performing technical support.</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Experience Item 2 -->
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">Mar 2022 – Apr 2024</div>
-                    <div class="timeline-content">
-                        <h3>Freelance Media Buyer – Google Ads</h3>
-                        <span class="timeline-company">Freelance</span>
-                        <p class="timeline-summary">Executed target-driven marketing configurations to optimize customer discovery and boost ROI.</p>
-                        <ul class="timeline-details">
-                            <li>Managed end-to-end Google Ads campaigns including keyword research, audience targeting, and budget optimization.</li>
-                            <li>Analyzed advertising performance metrics and engineered data-driven audience adjustments.</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Experience Item 3 -->
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">Apr 2018 – Dec 2021</div>
-                    <div class="timeline-content">
-                        <h3>Admin Operations & Inventory Executive</h3>
-                        <span class="timeline-company">Hive Interiors</span>
-                        <p class="timeline-summary">Oversaw core office logistics, internal resource configurations, and back-end database administration.</p>
-                        <ul class="timeline-details">
-                            <li>Tracked company assets and materials, maintaining strict logging procedures.</li>
-                            <li>Managed administrative registers, including staff attendance logs and employee ID systems.</li>
-                            <li>Provided internal IT support and basic infrastructure maintenance (CCTV monitoring, workstation configurations).</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Experience Item 4 -->
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">Mar 2014 – Mar 2018</div>
-                    <div class="timeline-content">
-                        <h3>Inventory Support & Admin Executive</h3>
-                        <span class="timeline-company">NS Corporation Ltd.</span>
-                        <p class="timeline-summary">Assisted with operational data logging, standard stock calculations, and inter-departmental communications.</p>
-                        <ul class="timeline-details">
-                            <li>Maintained basic warehouse resource records and prepared reporting schedules for upper management.</li>
-                            <li>Handled routine administrative and data entry responsibilities.</li>
-                        </ul>
-                    </div>
-                </div>
-
-            </div>
+        <div>
+          <strong>Shjjad Patwary</strong>
+          <p>Senior Operations, Admin &amp; IT</p>
         </div>
-    </section>
+      </div>
+      <button class="drawer-close-btn" id="drawer-close" aria-label="Close menu">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
 
-    <!-- Skills Section -->
-    <section id="skills" class="section">
-        <div class="container">
-            <h2 class="section-title">Core Competencies</h2>
-            <div class="skills-grid">
-                
-                <div class="skill-category">
-                    <div class="category-header">
-                        <i class="fas fa-boxes-stacked"></i>
-                        <h3>Inventory & Warehouse Operations</h3>
-                    </div>
-                    <ul class="skill-list">
-                        <li>Inventory Planning & Control</li>
-                        <li>Stock Reconciliation & Audit</li>
-                        <li>SKU & Barcode Management</li>
-                        <li>Goods Receiving (GRN) & Dispatch</li>
-                        <li>Order Fulfillment & Logistics</li>
-                    </ul>
-                </div>
+    <ul class="drawer-links">
+      <li><a href="#about" class="drawer-link"><i class="fas fa-user-check"></i> About Me</a></li>
+      <li><a href="#impact" class="drawer-link"><i class="fas fa-chart-line"></i> Key Impact</a></li>
+      <li><a href="#experience" class="drawer-link"><i class="fas fa-briefcase"></i> Experience</a></li>
+      <li><a href="#skills" class="drawer-link"><i class="fas fa-layer-group"></i> Skills &amp; Tech</a></li>
+      <li><a href="#education" class="drawer-link"><i class="fas fa-graduation-cap"></i> Credentials</a></li>
+      <li><a href="#resume" class="drawer-link"><i class="fas fa-file-invoice"></i> Resume Dossier</a></li>
+      <li><a href="#contact" class="drawer-link"><i class="fas fa-envelope"></i> Contact</a></li>
+    </ul>
 
-                <div class="skill-category">
-                    <div class="category-header">
-                        <i class="fas fa-laptop-code"></i>
-                        <h3>Website & E-commerce Operations</h3>
-                    </div>
-                    <ul class="skill-list">
-                        <li>Website Administration</li>
-                        <li>POS & Inventory Integration</li>
-                        <li>Order Management Systems (OMS)</li>
-                        <li>Internal SEO Optimization</li>
-                        <li>Product Listing & E-commerce UI</li>
-                    </ul>
-                </div>
+    <div class="drawer-bottom">
+      <div class="drawer-cv-options">
+        <a href="Mohammad_Shjjad_Patwary_Executive_CV.pdf" download="Mohammad_Shjjad_Patwary_Executive_CV.pdf" class="drawer-action-btn dl-btn direct-download-link" id="drawer-download-cv-btn" title="Download Executive CV with Profile Photo (PDF)">
+          <i class="fas fa-id-badge"></i> Download CV (With Photo)
+        </a>
+        <a href="Mohammad_Shjjad_Patwary_Executive_CV_No_Photo.pdf" download="Mohammad_Shjjad_Patwary_Executive_CV_No_Photo.pdf" class="drawer-action-btn dl-btn direct-download-link" id="drawer-download-cv-no-photo-btn" title="Download Executive CV without Photo (PDF)">
+          <i class="fas fa-file-alt"></i> Download CV (No Photo)
+        </a>
+      </div>
+      <button class="drawer-resume-btn" id="drawer-resume-trigger">
+        <i class="fas fa-file-invoice"></i> View Interactive CV
+      </button>
+      <a href="https://wa.me/8801737908116" target="_blank" rel="noopener" class="drawer-wa-btn">
+        <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+      </a>
+    </div>
+  </div>
+  <div class="drawer-overlay" id="drawer-overlay" aria-hidden="true"></div>
 
-                <div class="skill-category">
-                    <div class="category-header">
-                        <i class="fas fa-headset"></i>
-                        <h3>IT Support & Analytical Tools</h3>
-                    </div>
-                    <ul class="skill-list">
-                        <li>IT Operations & Tech Support</li>
-                        <li>Retail POS Systems Setup</li>
-                        <li>Microsoft Excel & Data Reporting</li>
-                        <li>Hardware/Software Troubleshooting</li>
-                        <li>Data-driven Performance Audits</li>
-                    </ul>
-                </div>
+  <main>
 
-            </div>
+    <!-- ──────────────────────────────────────────────
+         HERO SECTION
+    ─────────────────────────────────────────────── -->
+    <section class="hero-section" id="home">
+      <!-- Particle Interactive Canvas -->
+      <canvas id="particle-canvas" class="hero-canvas" aria-hidden="true"></canvas>
+
+      <div class="container hero-container">
+        
+        <!-- Left: Hero Text Column -->
+        <div class="hero-content">
+
+          <!-- Eyebrow Pill -->
+          <div class="hero-pill reveal-fade">
+            <span class="pill-dot"></span>
+            <span class="pill-text">Senior Operations, Admin &amp; IT Specialist</span>
+            <span class="pill-badge">10+ Years</span>
+          </div>
+
+          <!-- Hero Main Title -->
+          <h1 class="hero-title reveal-fade" style="--delay: 0.1s">
+            <span class="title-line">Strategic Operations, Admin &amp;</span>
+            <span class="title-line gradient-text">IT Systems Management</span>
+          </h1>
+
+          <!-- Dynamic Typing Line -->
+          <div class="typed-box reveal-fade" style="--delay: 0.2s">
+            <span class="typed-label">Core Specialization:</span>
+            <span id="typed-text" class="typed-dynamic"></span>
+            <span class="typed-blinker" aria-hidden="true">|</span>
+          </div>
+
+          <!-- Executive Bio -->
+          <p class="hero-description reveal-fade" style="--delay: 0.3s">
+            Results-oriented operations professional with <strong>10+ years</strong> bridging
+            <strong>corporate administration</strong>, <strong>vendor procurement</strong>,
+            <strong>physical warehouse accuracy</strong>, and <strong>multi-channel IT systems</strong> across Bangladesh's premier brands.
+          </p>
+
+          <!-- Hero Action Buttons -->
+          <div class="hero-cta-group reveal-fade" style="--delay: 0.4s">
+            <a href="#contact" class="btn btn-primary magnetic">
+              <span>Let's Discuss Opportunities</span>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+
+            <button class="btn btn-secondary magnetic" id="hero-resume-trigger">
+              <i class="fas fa-file-lines"></i>
+              <span>View Executive CV</span>
+            </button>
+
+            <a href="https://wa.me/8801737908116" target="_blank" rel="noopener" class="btn btn-whatsapp magnetic" title="Direct WhatsApp Chat">
+              <i class="fab fa-whatsapp"></i>
+              <span>WhatsApp</span>
+            </a>
+          </div>
+
+          <!-- Highlights Pills -->
+          <div class="hero-tags-row reveal-fade" style="--delay: 0.5s">
+            <span class="hero-tag"><i class="fas fa-briefcase"></i> Admin &amp; Office Ops</span>
+            <span class="hero-tag"><i class="fas fa-handshake"></i> Vendor Procurement</span>
+            <span class="hero-tag"><i class="fas fa-boxes-stacked"></i> Inventory Control</span>
+            <span class="hero-tag"><i class="fas fa-rotate"></i> Omnichannel POS</span>
+            <span class="hero-tag"><i class="fas fa-server"></i> IT Infrastructure</span>
+          </div>
+
         </div>
-    </section>
 
-    <!-- Education & Training Section -->
-    <section id="education" class="section bg-alt">
-        <div class="container">
-            <h2 class="section-title">Education & Credentials</h2>
-            <div class="edu-train-grid">
-                
-                <div class="edu-column">
-                    <h3 class="subsection-title"><i class="fas fa-graduation-cap"></i> Academic Background</h3>
-                    
-                    <div class="edu-card">
-                        <span class="edu-date">MBA | CGPA: 3.68/4.00</span>
-                        <h4>Marketing & International Business</h4>
-                        <p class="school">International Islamic University Chittagong</p>
-                    </div>
-
-                    <div class="edu-card">
-                        <span class="edu-date">BBA | CGPA: 3.78/4.00</span>
-                        <h4>Marketing</h4>
-                        <p class="school">International Islamic University Chittagong</p>
-                    </div>
-
-                    <div class="edu-card">
-                        <span class="edu-date">Business Studies</span>
-                        <h4>HSC & SSC</h4>
-                        <p class="school">Comilla Cantonment College & High School</p>
-                    </div>
-                </div>
-
-                <div class="edu-column">
-                    <h3 class="subsection-title"><i class="fas fa-certificate"></i> Certifications & Internships</h3>
-                    
-                    <div class="edu-card">
-                        <span class="edu-date">Oct 2012 – Dec 2012</span>
-                        <h4>Intern (Research & Data Analysis)</h4>
-                        <p class="school">Akij Food & Beverage Ltd.</p>
-                    </div>
-
-                    <div class="edu-card">
-                        <span class="edu-date">2018</span>
-                        <h4>Import Business Training</h4>
-                        <p class="school">Import Business BD</p>
-                    </div>
-
-                    <div class="edu-card">
-                        <span class="edu-date">2019</span>
-                        <h4>Preparing Tax Return by Individual Taxpayer</h4>
-                        <p class="school">Pencil Box</p>
-                    </div>
-
-                    <div class="edu-card">
-                        <span class="edu-date">2015</span>
-                        <h4>National Skill Standard Basic Training</h4>
-                        <p class="school">Bangladesh Technical Education Board</p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="section">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <p class="contact-subtitle">Have an opportunity or operational challenge? Let's discuss how I can help streamline your workflows.</p>
+        <!-- Right: Modern Operations Command HUD -->
+        <div class="hero-hud-col reveal-right" style="--delay: 0.25s">
+          <div class="command-hud-card spotlight-card">
             
-            <div class="contact-wrapper">
-                <div class="contact-form-container">
-                    <form id="contact-form" onsubmit="event.preventDefault(); alert('Thank you! Your message mockup has been submitted.');">
-                        <div class="form-group">
-                            <label for="name">Full Name</label>
-                            <input type="text" id="name" required placeholder="Your Name">
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email Address</label>
-                            <input type="email" id="email" required placeholder="name@example.com">
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" rows="5" required placeholder="Your message here..."></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-block">Send Message</button>
-                    </form>
-                </div>
+            <!-- HUD Top Bar -->
+            <div class="hud-header">
+              <div class="hud-status">
+                <span class="pulse-indicator"></span>
+                <span class="hud-title">OPERATIONS COMMAND</span>
+              </div>
+              <div class="hud-clock" id="dhaka-clock">
+                <i class="far fa-clock"></i>
+                <span id="clock-display">00:00:00</span>
+              </div>
             </div>
+
+            <!-- Profile Info Banner -->
+            <div class="hud-profile">
+              <div class="hud-avatar">
+                <img src="profile.jpg" alt="Mohammad Shjjad Patwary" class="hud-avatar-img" />
+                <div class="avatar-ring"></div>
+              </div>
+              <div class="hud-profile-info">
+                <h3>Mohammad Shjjad Patwary</h3>
+                <p>Manager – Operations, Corporate Admin, IT &amp; Inventory</p>
+              </div>
+            </div>
+
+            <!-- Key Metrics Grid -->
+            <div class="hud-metrics-grid">
+              <div class="hud-metric" data-target="10" data-suffix="+">
+                <div class="metric-number counter">0</div>
+                <div class="metric-title">Years Experience</div>
+              </div>
+              <div class="hud-metric" data-target="99.4" data-suffix="%">
+                <div class="metric-number counter">0</div>
+                <div class="metric-title">Inventory Precision</div>
+              </div>
+              <div class="hud-metric" data-target="2000" data-suffix="+">
+                <div class="metric-number counter">0</div>
+                <div class="metric-title">SKUs Engineered</div>
+              </div>
+              <div class="hud-metric" data-target="100" data-suffix="%">
+                <div class="metric-number counter">0</div>
+                <div class="metric-title">POS Uptime Rate</div>
+              </div>
+            </div>
+
+            <!-- Live Simulated Activity Stream -->
+            <div class="hud-stream-container">
+              <div class="stream-header">
+                <span class="stream-title"><i class="fas fa-terminal"></i> Operational Telemetry Feed</span>
+                <span class="stream-status">LIVE SYNC</span>
+              </div>
+              <div class="stream-feed" id="telemetry-feed">
+                <!-- Dynamically populated ticker lines -->
+                <div class="stream-line"><span class="stream-tag">[ADMIN-PROC]</span> Vendor procurement invoice matched &amp; authorized for billing</div>
+                <div class="stream-line"><span class="stream-tag">[POS-SYNC]</span> Multi-outlet inventory synchronized across registers</div>
+                <div class="stream-line"><span class="stream-tag">[CATALOG]</span> 2,000+ SKUs taxonomy and barcode database verified</div>
+                <div class="stream-line"><span class="stream-tag">[AUDIT]</span> Goods Received Note (GRN) audit cycle completed</div>
+              </div>
+            </div>
+
+            <!-- Quick Direct Actions inside HUD -->
+            <div class="hud-footer-actions">
+              <a href="mailto:shjjadpatwary@gmail.com" class="hud-action-link" title="Copy or email">
+                <i class="fas fa-envelope"></i> shjjadpatwary@gmail.com
+              </a>
+              <button class="copy-btn mini" data-copy="shjjadpatwary@gmail.com" aria-label="Copy Email">
+                <i class="fas fa-copy"></i>
+              </button>
+            </div>
+
+          </div>
         </div>
+
+      </div>
+
+      <!-- Scroll Down Pill -->
+      <a href="#about" class="scroll-down-hint" aria-label="Scroll to about section">
+        <div class="mouse-icon">
+          <span class="mouse-wheel"></span>
+        </div>
+        <span>Explore Journey</span>
+      </a>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container footer-content">
-            <p>&copy; 2026 Mohammad Shjjad Patwary. All Rights Reserved.</p>
-            <div class="social-links">
-                <a href="mailto:shjjadpatwary@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
-                <a href="tel:+8801737908116" title="Phone"><i class="fas fa-phone"></i></a>
-                <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-            </div>
-        </div>
-    </footer>
 
-    <!-- Custom JS -->
-    <script src="script.js"></script>
+    <!-- ──────────────────────────────────────────────
+         TECH & TOOLS INFINITE MARQUEE
+    ─────────────────────────────────────────────── -->
+    <div class="marquee-section" aria-hidden="true">
+      <div class="marquee-track">
+        <div class="marquee-group">
+          <span class="marquee-item"><i class="fas fa-building-user"></i> Corporate Administration</span>
+          <span class="marquee-item"><i class="fas fa-file-contract"></i> Vendor Procurement &amp; Invoicing</span>
+          <span class="marquee-item"><i class="fab fa-shopify"></i> Shopify E-Commerce</span>
+          <span class="marquee-item"><i class="fab fa-wordpress"></i> WooCommerce Ops</span>
+          <span class="marquee-item"><i class="fas fa-cash-register"></i> Retail POS Hardware</span>
+          <span class="marquee-item"><i class="fas fa-chart-pie"></i> Inventory Data Modeling</span>
+          <span class="marquee-item"><i class="fas fa-clipboard-check"></i> Asset &amp; Attendance Registers</span>
+          <span class="marquee-item"><i class="fab fa-google"></i> Google Ads &amp; ROAS</span>
+          <span class="marquee-item"><i class="fas fa-barcode"></i> SKU &amp; Barcode Architecture</span>
+          <span class="marquee-item"><i class="fas fa-warehouse"></i> GRN &amp; Warehouse Audits</span>
+          <span class="marquee-item"><i class="fas fa-network-wired"></i> LAN &amp; Network Infrastructure</span>
+          <span class="marquee-item"><i class="fas fa-video"></i> CCTV Surveillance Management</span>
+          <span class="marquee-item"><i class="fas fa-truck-ramp-box"></i> Order Management (OMS)</span>
+        </div>
+        <!-- Duplicate for continuous infinite scroll -->
+        <div class="marquee-group" aria-hidden="true">
+          <span class="marquee-item"><i class="fas fa-building-user"></i> Corporate Administration</span>
+          <span class="marquee-item"><i class="fas fa-file-contract"></i> Vendor Procurement &amp; Invoicing</span>
+          <span class="marquee-item"><i class="fab fa-shopify"></i> Shopify E-Commerce</span>
+          <span class="marquee-item"><i class="fab fa-wordpress"></i> WooCommerce Ops</span>
+          <span class="marquee-item"><i class="fas fa-cash-register"></i> Retail POS Hardware</span>
+          <span class="marquee-item"><i class="fas fa-chart-pie"></i> Inventory Data Modeling</span>
+          <span class="marquee-item"><i class="fas fa-clipboard-check"></i> Asset &amp; Attendance Registers</span>
+          <span class="marquee-item"><i class="fab fa-google"></i> Google Ads &amp; ROAS</span>
+          <span class="marquee-item"><i class="fas fa-barcode"></i> SKU &amp; Barcode Architecture</span>
+          <span class="marquee-item"><i class="fas fa-warehouse"></i> GRN &amp; Warehouse Audits</span>
+          <span class="marquee-item"><i class="fas fa-network-wired"></i> LAN &amp; Network Infrastructure</span>
+          <span class="marquee-item"><i class="fas fa-video"></i> CCTV Surveillance Management</span>
+          <span class="marquee-item"><i class="fas fa-truck-ramp-box"></i> Order Management (OMS)</span>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- ──────────────────────────────────────────────
+         ABOUT & CORE PHILOSOPHY
+    ─────────────────────────────────────────────── -->
+    <section class="section" id="about">
+      <div class="container">
+
+        <div class="section-badge reveal-up">
+          <span class="badge-num">01</span>
+          <span class="badge-title">Executive Profile</span>
+        </div>
+        <h2 class="section-title reveal-up">Mastering Logistics, IT &amp; Corporate Administration</h2>
+        <p class="section-subtitle reveal-up">
+          Proven expertise bridging physical retail floors, corporate office administration, and digital storefront systems.
+        </p>
+
+        <div class="about-grid">
+
+          <!-- Left Narrative -->
+          <div class="about-card-large spotlight-card reveal-up">
+            <h3 class="about-lead-title">
+              10+ Years of Grounded Operational, IT &amp; Administrative Excellence
+            </h3>
+            <p class="about-paragraph">
+              Throughout my decade across Bangladesh's retail and commercial landscape, I have orchestrated
+              <strong>corporate office administration</strong>, <strong>vendor procurement pipelines</strong>,
+              <strong>warehouse inventory overhauls</strong>, and <strong>IT infrastructure deployments</strong>. My operational approach is rooted in 
+              <span class="text-highlight">total data integrity &amp; administrative accountability</span>: ensuring that every commercial purchase order, sample register, employee attendance log, and inventory unit is strictly governed and audited.
+            </p>
+            <p class="about-paragraph">
+              Having earned both an <strong>MBA (CGPA 3.68)</strong> and <strong>BBA (CGPA 3.78)</strong> in Marketing &amp; International Business,
+              I blend executive commercial governance with meticulous logistical and administrative execution.
+            </p>
+
+            <div class="about-deliverables">
+              <div class="deliverable-item">
+                <div class="deliv-icon"><i class="fas fa-building-user"></i></div>
+                <div>
+                  <strong>Corporate Administration &amp; Facility Operations</strong>
+                  <span>Directing office administration, vendor procurement contracts, architectural sample logs, attendance registers, and facility security (CCTV &amp; LAN).</span>
+                </div>
+              </div>
+              <div class="deliverable-item">
+                <div class="deliv-icon"><i class="fas fa-shield-halved"></i></div>
+                <div>
+                  <strong>Inventory Precision &amp; Stock Leakage Elimination</strong>
+                  <span>Stringent Goods Received Notes (GRN), safety-stock limits, and spot audit protocols that cut discrepancies by over 30%.</span>
+                </div>
+              </div>
+              <div class="deliverable-item">
+                <div class="deliv-icon"><i class="fas fa-network-wired"></i></div>
+                <div>
+                  <strong>Seamless Omnichannel Sync &amp; IT Reliability</strong>
+                  <span>Unifying in-store sales registers with online catalogs to eliminate phantom stock and maintaining 100% hardware uptime.</span>
+                </div>
+              </div>
+              <div class="deliverable-item">
+                <div class="deliv-icon"><i class="fas fa-people-roof"></i></div>
+                <div>
+                  <strong>Cross-Functional Management &amp; SOP Development</strong>
+                  <span>Formulating institutional SOPs and onboarding administrative personnel, counter staff, and warehouse teams.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Snapshot Spec Sheet -->
+          <div class="about-spec-col reveal-right">
+            <div class="spec-card spotlight-card">
+              <h4 class="spec-card-title"><i class="fas fa-address-card"></i> Candidate Specifications</h4>
+
+              <div class="spec-list">
+                <div class="spec-row">
+                  <span class="spec-label">Current Role</span>
+                  <span class="spec-value">Manager – Operations, Corporate Admin, IT &amp; Inventory</span>
+                </div>
+                <div class="spec-row">
+                  <span class="spec-label">Total Experience</span>
+                  <span class="spec-value highlight">10+ Years (2014 – Present)</span>
+                </div>
+                <div class="spec-row">
+                  <span class="spec-label">Primary Base</span>
+                  <span class="spec-value">Cumilla Cantonment, Bangladesh</span>
+                </div>
+                <div class="spec-row">
+                  <span class="spec-label">Work Mode</span>
+                  <span class="spec-value">On-Site &bull; Hybrid &bull; Remote Consulting</span>
+                </div>
+                <div class="spec-row">
+                  <span class="spec-label">Education</span>
+                  <span class="spec-value">MBA (CGPA 3.68) &bull; BBA (CGPA 3.78)</span>
+                </div>
+                <div class="spec-row">
+                  <span class="spec-label">Languages</span>
+                  <span class="spec-value">English (Professional) &bull; Bengali (Native)</span>
+                </div>
+                <div class="spec-row">
+                  <span class="spec-label">Direct Contact</span>
+                  <div class="spec-value">
+                    <a href="mailto:shjjadpatwary@gmail.com" class="spec-link">shjjadpatwary@gmail.com</a>
+                  </div>
+                </div>
+                <div class="spec-row">
+                  <span class="spec-label">Phone &amp; WA</span>
+                  <div class="spec-value">
+                    <a href="tel:+8801737908116" class="spec-link">+880 1737 908116</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="spec-footer">
+                <a href="#contact" class="btn btn-primary full-width">
+                  <i class="fas fa-paper-plane"></i> Discuss an Operational Role
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ──────────────────────────────────────────────
+         KEY IMPACT — MODERN BENTO GRID
+    ─────────────────────────────────────────────── -->
+    <section class="section section-darker" id="impact">
+      <div class="container">
+
+        <div class="section-badge reveal-up">
+          <span class="badge-num">02</span>
+          <span class="badge-title">Proven Results</span>
+        </div>
+        <h2 class="section-title reveal-up">Measurable Operational Breakthroughs</h2>
+        <p class="section-subtitle reveal-up">
+          Engineered solutions that solved persistent retail bottlenecks, reduced costs, and accelerated growth.
+        </p>
+
+        <!-- Bento Grid Architecture -->
+        <div class="bento-grid">
+
+          <!-- Bento 1: Large Featured Card -->
+          <div class="bento-card bento-span-2 spotlight-card reveal-up">
+            <div class="bento-glow"></div>
+            <div class="bento-header">
+              <span class="bento-kpi-badge"><i class="fas fa-bolt"></i> 0 Phantom Stock Incidents</span>
+              <span class="bento-tag">Flagship Architecture</span>
+            </div>
+            <h3 class="bento-title">Real-Time Omnichannel POS &amp; Web Sync Engine</h3>
+            <p class="bento-text">
+              Eliminated duplicate sales and stock conflicts by engineering automated reconciliation between physical retail POS registers
+              and e-commerce checkout catalogs. Cashiers sell from the same live inventory ledger as online customers.
+            </p>
+
+            <div class="sync-flow-diagram" aria-hidden="true">
+              <div class="flow-step">
+                <i class="fas fa-warehouse"></i>
+                <span>Central Hub</span>
+              </div>
+              <div class="flow-arrow"><i class="fas fa-arrow-right"></i></div>
+              <div class="flow-step active">
+                <i class="fas fa-rotate"></i>
+                <span>Sync Protocol</span>
+              </div>
+              <div class="flow-arrow"><i class="fas fa-arrow-right"></i></div>
+              <div class="flow-step">
+                <i class="fas fa-store"></i>
+                <span>POS &amp; Web</span>
+              </div>
+            </div>
+
+            <div class="bento-points">
+              <span><i class="fas fa-check-circle"></i> Centralized SKU Master DB</span>
+              <span><i class="fas fa-check-circle"></i> Instant Negative-Stock Prevention</span>
+              <span><i class="fas fa-check-circle"></i> Automated Multi-Branch Stock Transfers</span>
+            </div>
+          </div>
+
+          <!-- Bento 2: Standard Card -->
+          <div class="bento-card spotlight-card reveal-up" style="--delay: 0.1s">
+            <div class="bento-header">
+              <span class="bento-kpi-badge"><i class="fas fa-clock"></i> 40% Faster</span>
+              <span class="bento-tag">Taxonomy &amp; Catalog</span>
+            </div>
+            <h3 class="bento-title">2,000+ SKU Barcode &amp; Variant System</h3>
+            <p class="bento-text">
+              Standardized raw product listings into systematic hierarchical categories, barcode labels, and clean variant options. Accelerated onboarding time for new seasonal collections by 40%.
+            </p>
+            <div class="bento-metric-callout">
+              <span class="callout-value">2,000+</span>
+              <span class="callout-label">Products Standardized with Scannable Barcodes</span>
+            </div>
+          </div>
+
+          <!-- Bento 3: Standard Card -->
+          <div class="bento-card spotlight-card reveal-up" style="--delay: 0.15s">
+            <div class="bento-header">
+              <span class="bento-kpi-badge"><i class="fas fa-chart-line-down"></i> 30%+ Cut</span>
+              <span class="bento-tag">Discrepancy Audit</span>
+            </div>
+            <h3 class="bento-title">Rigorous GRN &amp; Physical Audit Protocols</h3>
+            <p class="bento-text">
+              Instituted strict Goods Received Note (GRN) verification at receiving docks coupled with periodic spot cycle counts, cutting physical-to-digital inventory variance by over 30%.
+            </p>
+            <div class="bento-metric-callout">
+              <span class="callout-value">&gt;30%</span>
+              <span class="callout-label">Reduction in Inventory Variances &amp; Losses</span>
+            </div>
+          </div>
+
+          <!-- Bento 4: Small Card -->
+          <div class="bento-card spotlight-card reveal-up" style="--delay: 0.2s">
+            <div class="bento-header">
+              <span class="bento-kpi-badge"><i class="fas fa-shield-halved"></i> 100% Uptime</span>
+              <span class="bento-tag">IT Reliability</span>
+            </div>
+            <h3 class="bento-title">Zero POS Downtime During Peak Sales</h3>
+            <p class="bento-text">
+              Hardened POS hardware, deployed failover networks, and pre-configured backup terminals, safeguarding business revenue during peak Eid &amp; seasonal campaigns.
+            </p>
+          </div>
+
+          <!-- Bento 5: Small Card -->
+          <div class="bento-card spotlight-card reveal-up" style="--delay: 0.25s">
+            <div class="bento-header">
+              <span class="bento-kpi-badge"><i class="fas fa-bullseye"></i> High ROAS</span>
+              <span class="bento-tag">Marketing Synergy</span>
+            </div>
+            <h3 class="bento-title">Data-Backed Media Buying &amp; Ads</h3>
+            <p class="bento-text">
+              Audited Google Search, Display &amp; Shopping campaigns with negative-keyword filtration and conversion tracking to ensure advertising spend focused on high-margin in-stock SKUs.
+            </p>
+          </div>
+
+          <!-- Bento 6: Corporate Office Administration & Procurement -->
+          <div class="bento-card bento-span-3 spotlight-card reveal-up" style="--delay: 0.3s">
+            <div class="bento-header">
+              <span class="bento-kpi-badge"><i class="fas fa-building-shield"></i> 100% Asset Accountability</span>
+              <span class="bento-tag">Corporate Administration &amp; Governance</span>
+            </div>
+            <h3 class="bento-title">Corporate Office Administration, Fixed Asset Registers &amp; Vendor Procurement</h3>
+            <p class="bento-text">
+              Directing workplace operational discipline: instituted comprehensive fixed asset tracking registers, transparent vendor procurement schedules, biometric employee attendance systems, and complete facility infrastructure oversight (LAN connectivity, CCTV surveillance, and workstation uptime).
+            </p>
+            <div class="bento-points">
+              <span><i class="fas fa-check-circle"></i> Fixed Asset &amp; Material Registers</span>
+              <span><i class="fas fa-check-circle"></i> Vendor RFPs &amp; Billing Reconciliation</span>
+              <span><i class="fas fa-check-circle"></i> Biometric Attendance &amp; Leave SOPs</span>
+              <span><i class="fas fa-check-circle"></i> CCTV &amp; Facility Infrastructure Oversight</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ──────────────────────────────────────────────
+         CAREER EXPERIENCE
+    ─────────────────────────────────────────────── -->
+    <section class="section" id="experience">
+      <div class="container">
+
+        <div class="section-badge reveal-up">
+          <span class="badge-num">03</span>
+          <span class="badge-title">Career Milestones</span>
+        </div>
+        <h2 class="section-title reveal-up">10-Year Progressive Professional Journey</h2>
+        <p class="section-subtitle reveal-up">
+          Track record of delivering tangible operational excellence from retail shop floors to executive strategy.
+        </p>
+
+        <!-- Experience Timeline -->
+        <div class="timeline-container">
+
+          <!-- Role 1: Current -->
+          <div class="timeline-entry reveal-up">
+            <div class="timeline-node">
+              <div class="node-dot current"></div>
+              <div class="node-line"></div>
+            </div>
+            <div class="timeline-card spotlight-card">
+              <div class="role-header">
+                <div>
+                  <div class="role-badge-row">
+                    <span class="company-badge"><i class="fas fa-building"></i> Anzaar</span>
+                    <span class="period-badge current"><i class="fas fa-calendar-check"></i> May 2024 – Apr 2026</span>
+                    <span class="location-badge"><i class="fas fa-map-pin"></i> Dhaka, BD</span>
+                  </div>
+                  <h3 class="role-title">Manager – Operations, Corporate Admin, IT &amp; Inventory</h3>
+                </div>
+              </div>
+
+              <p class="role-summary">
+                Directing the complete operational alignment of physical warehouses, retail POS counters, and digital e-commerce channels.
+              </p>
+
+              <div class="role-responsibilities">
+                <div class="resp-item">
+                  <i class="fas fa-chevron-right"></i>
+                  <div><strong>Full-Lifecycle Inventory:</strong> Supervise receiving, transfers, safety-stock calculation, and cycle counts across facilities.</div>
+                </div>
+                <div class="resp-item">
+                  <i class="fas fa-chevron-right"></i>
+                  <div><strong>Multi-Channel Sync:</strong> Established automated synchronization between warehouse stock, multi-outlet POS, and e-commerce catalog.</div>
+                </div>
+                <div class="resp-item">
+                  <i class="fas fa-chevron-right"></i>
+                  <div><strong>E-Commerce Operations:</strong> Supervise listings, seasonal promotions, internal SEO tags, and checkout workflow optimization.</div>
+                </div>
+                <div class="resp-item">
+                  <i class="fas fa-chevron-right"></i>
+                  <div><strong>IT Enablement:</strong> Deployed POS terminal configurations, trained counter staff, and maintained network connectivity.</div>
+                </div>
+              </div>
+
+              <div class="role-tags">
+                <span>Inventory Control</span>
+                <span>POS Sync</span>
+                <span>E-Commerce Ops</span>
+                <span>Supply Chain</span>
+                <span>IT Infrastructure</span>
+                <span>SOP Development</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Role 2 -->
+          <div class="timeline-entry reveal-up" style="--delay: 0.1s">
+            <div class="timeline-node">
+              <div class="node-dot"></div>
+              <div class="node-line"></div>
+            </div>
+            <div class="timeline-card spotlight-card">
+              <div class="role-header">
+                <div>
+                  <div class="role-badge-row">
+                    <span class="company-badge"><i class="fas fa-laptop-code"></i> Independent Consulting</span>
+                    <span class="period-badge"><i class="fas fa-calendar-alt"></i> Mar 2022 – Apr 2024</span>
+                    <span class="location-badge"><i class="fas fa-globe"></i> Remote</span>
+                  </div>
+                  <h3 class="role-title">Freelance Media Buyer — Google Ads</h3>
+                </div>
+              </div>
+
+              <p class="role-summary">
+                Engineered performance-driven acquisition campaigns to maximize ROAS and customer discovery for retail &amp; commercial clients.
+              </p>
+
+              <div class="role-responsibilities">
+                <div class="resp-item">
+                  <i class="fas fa-chevron-right"></i>
+                  <div><strong>Campaign Management:</strong> End-to-end Google Search, Display, and Shopping setups with negative-keyword filtering and bid optimization.</div>
+                </div>
+                <div class="resp-item">
+                  <i class="fas fa-chevron-right"></i>
+                  <div><strong>Data Audits:</strong> Evaluated conversion tracking, audience affinity segments, and search query reports to reduce acquisition costs.</div>
+                </div>
+              </div>
+
+              <div class="role-tags">
+                <span>Google Ads</span>
+                <span>Audience Targeting</span>
+                <span>Conversion Tracking</span>
+                <span>ROAS Optimization</span>
+                <span>Analytical Audits</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Role 3 -->
+          <div class="timeline-entry reveal-up" style="--delay: 0.2s">
+            <div class="timeline-node">
+              <div class="node-dot"></div>
+              <div class="node-line"></div>
+            </div>
+            <div class="timeline-card spotlight-card">
+              <div class="role-header">
+                <div>
+                  <div class="role-badge-row">
+                    <span class="company-badge"><i class="fas fa-couch"></i> Hive Interiors</span>
+                    <span class="period-badge"><i class="fas fa-calendar-alt"></i> Apr 2018 – Dec 2021</span>
+                    <span class="location-badge"><i class="fas fa-map-pin"></i> Dhaka, BD</span>
+                  </div>
+                  <h3 class="role-title">Admin Operations &amp; Inventory Executive</h3>
+                </div>
+              </div>
+
+              <p class="role-summary">
+                Directed general office administration, commercial procurement pipelines, fixed asset registers, and workplace technology infrastructure across corporate facilities.
+              </p>
+
+              <div class="role-responsibilities">
+                <div class="resp-item">
+                  <i class="fas fa-chevron-right"></i>
+                  <div><strong>General Office Administration:</strong> Supervised corporate facility workflows, biometric attendance systems, employee leave registers, and executive administrative correspondence.</div>
+                </div>
+                <div class="resp-item">
+                  <i class="fas fa-chevron-right"></i>
+                  <div><strong>Vendor Procurement &amp; Accounts:</strong> Coordinated contractor bids, negotiated material prices, vetted purchase orders, and reconciled vendor challans with accounts payable invoices.</div>
+                </div>
+                <div class="resp-item">
+                  <i class="fas fa-chevron-right"></i>
+                  <div><strong>Fixed Asset &amp; Sample Registers:</strong> Maintained strict digital and physical asset registers for high-value architectural samples, interior fixtures, and construction tools with zero loss.</div>
+                </div>
+                <div class="resp-item">
+                  <i class="fas fa-chevron-right"></i>
+                  <div><strong>IT &amp; Facility Security:</strong> Oversaw 24/7 CCTV surveillance networks, biometric door controllers, workstation configurations, and high-speed office LAN infrastructure.</div>
+                </div>
+              </div>
+
+              <div class="role-tags">
+                <span>Corporate Office Admin</span>
+                <span>Vendor Procurement</span>
+                <span>Fixed Asset Registers</span>
+                <span>Biometric Attendance</span>
+                <span>CCTV &amp; Facility LAN</span>
+                <span>Invoice Reconciliation</span>
+                <span>Sample Control</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Role 4 -->
+          <div class="timeline-entry reveal-up" style="--delay: 0.3s">
+            <div class="timeline-node">
+              <div class="node-dot"></div>
+            </div>
+            <div class="timeline-card spotlight-card">
+              <div class="role-header">
+                <div>
+                  <div class="role-badge-row">
+                    <span class="company-badge"><i class="fas fa-industry"></i> NS Corporation Ltd.</span>
+                    <span class="period-badge"><i class="fas fa-calendar-alt"></i> Mar 2014 – Mar 2018</span>
+                    <span class="location-badge"><i class="fas fa-map-pin"></i> Dhaka, BD</span>
+                  </div>
+                  <h3 class="role-title">Inventory Support &amp; Admin Executive</h3>
+                </div>
+              </div>
+
+              <p class="role-summary">
+                Spearheaded administrative record-keeping, commercial dispatch documentation, and warehouse inventory balance sheets.
+              </p>
+
+              <div class="role-responsibilities">
+                <div class="resp-item">
+                  <i class="fas fa-chevron-right"></i>
+                  <div><strong>Office Admin &amp; File Archiving:</strong> Managed administrative correspondence, employee attendance sheets, dispatch archives, and shipping manifests.</div>
+                </div>
+                <div class="resp-item">
+                  <i class="fas fa-chevron-right"></i>
+                  <div><strong>Data Reporting &amp; Balance Sheets:</strong> Formulated daily and weekly inventory balance reconciliations for senior management to guide procurement planning.</div>
+                </div>
+                <div class="resp-item">
+                  <i class="fas fa-chevron-right"></i>
+                  <div><strong>Receiving Dock &amp; Logistics:</strong> Inspected inbound goods, verified supplier delivery notes against physical cartons, and authorized warehouse binning.</div>
+                </div>
+              </div>
+
+              <div class="role-tags">
+                <span>Administrative Files</span>
+                <span>Attendance Logs</span>
+                <span>Stock Balancing</span>
+                <span>Warehouse Logistics</span>
+                <span>Dock Intake Verification</span>
+                <span>Variance Audits</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ──────────────────────────────────────────────
+         CORE COMPETENCIES & SKILLS (ENHANCED DASHBOARD)
+    ─────────────────────────────────────────────── -->
+    <section class="section section-darker" id="skills">
+      <div class="container">
+
+        <div class="section-badge reveal-up">
+          <span class="badge-num">04</span>
+          <span class="badge-title">Operational Capabilities</span>
+        </div>
+        <h2 class="section-title reveal-up">Core Competencies &amp; Technical Toolset</h2>
+        <p class="section-subtitle reveal-up">
+          An integrated operational architecture uniting physical warehouse rigor, corporate governance protocols, retail POS hardware rollouts, and e-commerce systems.
+        </p>
+
+        <!-- Master Operational Telemetry Ribbon -->
+        <div class="skills-metrics-ribbon reveal-up">
+          <div class="smr-card spotlight-card">
+            <div class="smr-icon"><i class="fas fa-boxes-packing"></i></div>
+            <div class="smr-info">
+              <span class="smr-val">95%+</span>
+              <span class="smr-lbl">Audit &amp; Inventory Accuracy</span>
+            </div>
+          </div>
+          <div class="smr-card spotlight-card">
+            <div class="smr-icon"><i class="fas fa-barcode"></i></div>
+            <div class="smr-info">
+              <span class="smr-val">2,000+</span>
+              <span class="smr-lbl">Barcoded SKUs Standardized</span>
+            </div>
+          </div>
+          <div class="smr-card spotlight-card">
+            <div class="smr-icon"><i class="fas fa-shield-halved"></i></div>
+            <div class="smr-info">
+              <span class="smr-val">100%</span>
+              <span class="smr-lbl">Fixed Asset &amp; Audit Compliance</span>
+            </div>
+          </div>
+          <div class="smr-card spotlight-card">
+            <div class="smr-icon"><i class="fas fa-cash-register"></i></div>
+            <div class="smr-info">
+              <span class="smr-val">99.8%</span>
+              <span class="smr-lbl">POS Terminal &amp; Network Uptime</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive Category Switcher Tabs -->
+        <div class="skills-tabs-row reveal-up">
+          <button class="skill-tab-btn active" data-tab="all">
+            <i class="fas fa-layer-group"></i> All Capabilities <span class="tab-count">25</span>
+          </button>
+          <button class="skill-tab-btn" data-tab="inv">
+            <i class="fas fa-boxes-stacked"></i> Inventory &amp; Warehouse <span class="tab-count">5</span>
+          </button>
+          <button class="skill-tab-btn" data-tab="admin">
+            <i class="fas fa-building-user"></i> Corporate Admin &amp; Facility <span class="tab-count">5</span>
+          </button>
+          <button class="skill-tab-btn" data-tab="ecom">
+            <i class="fas fa-globe"></i> E-Commerce &amp; OMS <span class="tab-count">5</span>
+          </button>
+          <button class="skill-tab-btn" data-tab="it">
+            <i class="fas fa-server"></i> IT &amp; Infrastructure <span class="tab-count">5</span>
+          </button>
+          <button class="skill-tab-btn" data-tab="data">
+            <i class="fas fa-chart-line"></i> Analytics &amp; Tools <span class="tab-count">5</span>
+          </button>
+        </div>
+
+        <!-- Skills Cards Grid -->
+        <div class="skills-cards-grid">
+
+          <!-- Domain 1: Inventory & Warehouse -->
+          <div class="skill-card spotlight-card reveal-up" data-category="inv">
+            <div class="sc-header">
+              <div class="sc-icon inv-icon"><i class="fas fa-boxes-stacked"></i></div>
+              <div class="sc-title-group">
+                <h3>Inventory &amp; Warehouse Operations</h3>
+                <span class="sc-sub">Floor precision, GRN audit cycles &amp; cross-channel sync</span>
+              </div>
+              <span class="sc-impact-pill"><i class="fas fa-arrow-trend-down"></i> 30%+ Variance Cut</span>
+            </div>
+
+            <div class="sc-skills-list">
+              <div class="sc-item">
+                <div class="sc-item-header">
+                  <span class="sc-name"><i class="fas fa-circle-check"></i> Inventory Planning &amp; Safety Control</span>
+                  <div class="sc-score"><span class="score-val">95%</span><span class="level-badge expert">Expert</span></div>
+                </div>
+                <div class="sc-bar"><div class="sc-fill" style="--percent: 95%"><span class="sc-glow-tip"></span></div></div>
+              </div>
+
+              <div class="sc-item">
+                <div class="sc-item-header">
+                  <span class="sc-name"><i class="fas fa-circle-check"></i> Stock Reconciliation &amp; Periodic Auditing</span>
+                  <div class="sc-score"><span class="score-val">96%</span><span class="level-badge expert">Expert</span></div>
+                </div>
+                <div class="sc-bar"><div class="sc-fill" style="--percent: 96%"><span class="sc-glow-tip"></span></div></div>
+              </div>
+
+              <div class="sc-item">
+                <div class="sc-item-header">
+                  <span class="sc-name"><i class="fas fa-circle-check"></i> SKU Architecture &amp; Barcode Labeling</span>
+                  <div class="sc-score"><span class="score-val">90%</span><span class="level-badge advanced">Advanced</span></div>
+                </div>
+                <div class="sc-bar"><div class="sc-fill" style="--percent: 90%"><span class="sc-glow-tip"></span></div></div>
+              </div>
+
+              <div class="sc-item">
+                <div class="sc-item-header">
+                  <span class="sc-name"><i class="fas fa-circle-check"></i> GRN Verification &amp; Receiving Dock Oversight</span>
+                  <div class="sc-score"><span class="score-val">94%</span><span class="level-badge expert">Expert</span></div>
+                </div>
+                <div class="sc-bar"><div class="sc-fill" style="--percent: 94%"><span class="sc-glow-tip"></span></div></div>
+              </div>
+
+              <div class="sc-item">
+                <div class="sc-item-header">
+                  <span class="sc-name"><i class="fas fa-circle-check"></i> Order Fulfillment &amp; Return Logistics (RMA)</span>
+                  <div class="sc-score"><span class="score-val">88%</span><span class="level-badge advanced">Advanced</span></div>
+                </div>
+                <div class="sc-bar"><div class="sc-fill" style="--percent: 88%"><span class="sc-glow-tip"></span></div></div>
+              </div>
+            </div>
+
+            <!-- Technology & Framework Chips -->
+            <div class="sc-tags-strip">
+              <span class="sc-chip"><i class="fas fa-tag"></i> GS1 Barcoding</span>
+              <span class="sc-chip"><i class="fas fa-clipboard-check"></i> Strict GRN Audits</span>
+              <span class="sc-chip"><i class="fas fa-shield"></i> Safety Stock Buffer</span>
+              <span class="sc-chip"><i class="fas fa-truck-ramp-box"></i> Receiving Dock SOPs</span>
+            </div>
+          </div>
+
+          <!-- Domain 2: Corporate Admin & Facility -->
+          <div class="skill-card spotlight-card reveal-up" data-category="admin" style="--delay: 0.05s">
+            <div class="sc-header">
+              <div class="sc-icon admin-icon"><i class="fas fa-building-user"></i></div>
+              <div class="sc-title-group">
+                <h3>Corporate Admin &amp; Facility Operations</h3>
+                <span class="sc-sub">Executive governance, vendor billing &amp; asset registers</span>
+              </div>
+              <span class="sc-impact-pill"><i class="fas fa-shield-check"></i> 100% Audit Compliance</span>
+            </div>
+
+            <div class="sc-skills-list">
+              <div class="sc-item">
+                <div class="sc-item-header">
+                  <span class="sc-name"><i class="fas fa-circle-check"></i> Fixed Asset &amp; Resource Registers</span>
+                  <div class="sc-score"><span class="score-val">96%</span><span class="level-badge expert">Expert</span></div>
+                </div>
+                <div class="sc-bar"><div class="sc-fill" style="--percent: 96%"><span class="sc-glow-tip"></span></div></div>
+              </div>
+
+              <div class="sc-item">
+                <div class="sc-item-header">
+                  <span class="sc-name"><i class="fas fa-circle-check"></i> Vendor Procurement &amp; Invoice Vetting</span>
+                  <div class="sc-score"><span class="score-val">94%</span><span class="level-badge expert">Expert</span></div>
+                </div>
+                <div class="sc-bar"><div class="sc-fill" style="--percent: 94%"><span class="sc-glow-tip"></span></div></div>
+              </div>
+
+              <div class="sc-item">
+                <div class="sc-item-header">
+                  <span class="sc-name"><i class="fas fa-circle-check"></i> Biometric Attendance &amp; Leave Protocols</span>
+                  <div class="sc-score"><span class="score-val">95%</span><span class="level-badge expert">Expert</span></div>
+                </div>
+                <div class="sc-bar"><div class="sc-fill" style="--percent: 95%"><span class="sc-glow-tip"></span></div></div>
+              </div>
+
+              <div class="sc-item">
+                <div class="sc-item-header">
+                  <span class="sc-name"><i class="fas fa-circle-check"></i> Facility Infrastructure (CCTV, LAN &amp; Power)</span>
+                  <div class="sc-score"><span class="score-val">92%</span><span class="level-badge advanced">Advanced</span></div>
+                </div>
+                <div class="sc-bar"><div class="sc-fill" style="--percent: 92%"><span class="sc-glow-tip"></span></div></div>
+              </div>
+
+              <div class="sc-item">
+                <div class="sc-item-header">
+                  <span class="sc-name"><i class="fas fa-circle-check"></i> Commercial Import &amp; Tax Documentation</span>
+                  <div class="sc-score"><span class="score-val">88%</span><span class="level-badge advanced">Advanced</span></div>
+                </div>
+                <div class="sc-bar"><div class="sc-fill" style="--percent: 88%"><span class="sc-glow-tip"></span></div></div>
+              </div>
+            </div>
+
+            <!-- Technology & Framework Chips -->
+            <div class="sc-tags-strip">
+              <span class="sc-chip"><i class="fas fa-fingerprint"></i> Biometric Attendance</span>
+              <span class="sc-chip"><i class="fas fa-file-invoice"></i> AP Invoice Vetting</span>
+              <span class="sc-chip"><i class="fas fa-video"></i> 24/7 CCTV Surveillance</span>
+              <span class="sc-chip"><i class="fas fa-id-badge"></i> Asset Tracking Registers</span>
+            </div>
+          </div>
+
+          <!-- Domain 3: Website & E-Commerce -->
+          <div class="skill-card spotlight-card reveal-up" data-category="ecom" style="--delay: 0.1s">
+            <div class="sc-header">
+              <div class="sc-icon ecom-icon"><i class="fas fa-globe"></i></div>
+              <div class="sc-title-group">
+                <h3>Website &amp; E-Commerce Operations</h3>
+                <span class="sc-sub">Digital storefronts, OMS pipelines &amp; catalog sync</span>
+              </div>
+              <span class="sc-impact-pill"><i class="fas fa-bolt"></i> +40% Fulfillment Speed</span>
+            </div>
+
+            <div class="sc-skills-list">
+              <div class="sc-item">
+                <div class="sc-item-header">
+                  <span class="sc-name"><i class="fas fa-circle-check"></i> E-Commerce Website Administration</span>
+                  <div class="sc-score"><span class="score-val">92%</span><span class="level-badge expert">Expert</span></div>
+                </div>
+                <div class="sc-bar"><div class="sc-fill" style="--percent: 92%"><span class="sc-glow-tip"></span></div></div>
+              </div>
+
+              <div class="sc-item">
+                <div class="sc-item-header">
+                  <span class="sc-name"><i class="fas fa-circle-check"></i> POS &amp; Inventory Omnichannel Sync</span>
+                  <div class="sc-score"><span class="score-val">89%</span><span class="level-badge advanced">Advanced</span></div>
+                </div>
+                <div class="sc-bar"><div class="sc-fill" style="--percent: 89%"><span class="sc-glow-tip"></span></div></div>
+              </div>
+
+              <div class="sc-item">
+                <div class="sc-item-header">
+                  <span class="sc-name"><i class="fas fa-circle-check"></i> Order Management Systems (OMS)</span>
+                  <div class="sc-score"><span class="score-val">95%</span><span class="level-badge expert">Expert</span></div>
+                </div>
+                <div class="sc-bar"><div class="sc-fill" style="--percent: 95%"><span class="sc-glow-tip"></span></div></div>
+              </div>
+
+              <div class="sc-item">
+                <div class="sc-item-header">
+                  <span class="sc-name"><i class="fas fa-circle-check"></i> Product Taxonomy &amp; Promotion Setup</span>
+                  <div class="sc-score"><span class="score-val">88%</span><span class="level-badge advanced">Advanced</span></div>
+                </div>
+                <div class="sc-bar"><div class="sc-fill" style="--percent: 88%"><span class="sc-glow-tip"></span></div></div>
+              </div>
+
+              <div class="sc-item">
+                <div class="sc-item-header">
+                  <span class="sc-name"><i class="fas fa-circle-check"></i> On-Page SEO &amp; Checkout Optimization</span>
+                  <div class="sc-score"><span class="score-val">80%</span><span class="level-badge intermediate">Intermediate</span></div>
+                </div>
+                <div class="sc-bar"><div class="sc-fill" style="--percent: 80%"><span class="sc-glow-tip"></span></div></div>
+              </div>
+            </div>
+
+            <!-- Technology & Framework Chips -->
+            <div class="sc-tags-strip">
+              <span class="sc-chip"><i class="fab fa-shopify"></i> Shopify Storefronts</span>
+              <span class="sc-chip"><i class="fab fa-wordpress"></i> WooCommerce Ops</span>
+              <span class="sc-chip"><i class="fas fa-cart-shopping"></i> OMS Fulfillment</span>
+              <span class="sc-chip"><i class="fas fa-magnifying-glass"></i> Internal Search &amp; Tags</span>
+            </div>
+          </div>
+
+          <!-- Domain 4: IT Infrastructure -->
+          <div class="skill-card spotlight-card reveal-up" data-category="it" style="--delay: 0.15s">
+            <div class="sc-header">
+              <div class="sc-icon it-icon"><i class="fas fa-server"></i></div>
+              <div class="sc-title-group">
+                <h3>IT Infrastructure &amp; Support</h3>
+                <span class="sc-sub">POS hardware, office LAN, CCTV &amp; staff training</span>
+              </div>
+              <span class="sc-impact-pill"><i class="fas fa-network-wired"></i> 100% Network Uptime</span>
+            </div>
+
+            <div class="sc-skills-list">
+              <div class="sc-item">
+                <div class="sc-item-header">
+                  <span class="sc-name"><i class="fas fa-circle-check"></i> Retail POS Hardware Setup &amp; Maintenance</span>
+                  <div class="sc-score"><span class="score-val">95%</span><span class="level-badge expert">Expert</span></div>
+                </div>
+                <div class="sc-bar"><div class="sc-fill" style="--percent: 95%"><span class="sc-glow-tip"></span></div></div>
+              </div>
+
+              <div class="sc-item">
+                <div class="sc-item-header">
+                  <span class="sc-name"><i class="fas fa-circle-check"></i> Workstation &amp; Office LAN Deployment</span>
+                  <div class="sc-score"><span class="score-val">90%</span><span class="level-badge advanced">Advanced</span></div>
+                </div>
+                <div class="sc-bar"><div class="sc-fill" style="--percent: 90%"><span class="sc-glow-tip"></span></div></div>
+              </div>
+
+              <div class="sc-item">
+                <div class="sc-item-header">
+                  <span class="sc-name"><i class="fas fa-circle-check"></i> CCTV Surveillance &amp; DVR/NVR Config</span>
+                  <div class="sc-score"><span class="score-val">92%</span><span class="level-badge advanced">Advanced</span></div>
+                </div>
+                <div class="sc-bar"><div class="sc-fill" style="--percent: 92%"><span class="sc-glow-tip"></span></div></div>
+              </div>
+
+              <div class="sc-item">
+                <div class="sc-item-header">
+                  <span class="sc-name"><i class="fas fa-circle-check"></i> Cross-Department IT Onboarding &amp; SOPs</span>
+                  <div class="sc-score"><span class="score-val">94%</span><span class="level-badge expert">Expert</span></div>
+                </div>
+                <div class="sc-bar"><div class="sc-fill" style="--percent: 94%"><span class="sc-glow-tip"></span></div></div>
+              </div>
+
+              <div class="sc-item">
+                <div class="sc-item-header">
+                  <span class="sc-name"><i class="fas fa-circle-check"></i> Hardware Diagnostics &amp; Troubleshooting</span>
+                  <div class="sc-score"><span class="score-val">88%</span><span class="level-badge advanced">Advanced</span></div>
+                </div>
+                <div class="sc-bar"><div class="sc-fill" style="--percent: 88%"><span class="sc-glow-tip"></span></div></div>
+              </div>
+            </div>
+
+            <!-- Technology & Framework Chips -->
+            <div class="sc-tags-strip">
+              <span class="sc-chip"><i class="fas fa-cash-register"></i> Touch POS Terminals</span>
+              <span class="sc-chip"><i class="fas fa-print"></i> Thermal Printers</span>
+              <span class="sc-chip"><i class="fas fa-network-wired"></i> Gigabit LAN / WiFi</span>
+              <span class="sc-chip"><i class="fas fa-screwdriver-wrench"></i> Hardware Diagnostic SOPs</span>
+            </div>
+          </div>
+
+          <!-- Domain 5: Analytics & Growth -->
+          <div class="skill-card spotlight-card reveal-up" data-category="data" style="--delay: 0.2s">
+            <div class="sc-header">
+              <div class="sc-icon data-icon"><i class="fas fa-chart-column"></i></div>
+              <div class="sc-title-group">
+                <h3>Analytical Tools &amp; Growth</h3>
+                <span class="sc-sub">Data models, performance advertising &amp; audits</span>
+              </div>
+              <span class="sc-impact-pill"><i class="fas fa-chart-line-up"></i> Data-Driven ROI</span>
+            </div>
+
+            <div class="sc-skills-list">
+              <div class="sc-item">
+                <div class="sc-item-header">
+                  <span class="sc-name"><i class="fas fa-circle-check"></i> Quantitative Inventory &amp; Data Modeling</span>
+                  <div class="sc-score"><span class="score-val">98%</span><span class="level-badge expert">Expert</span></div>
+                </div>
+                <div class="sc-bar"><div class="sc-fill" style="--percent: 98%"><span class="sc-glow-tip"></span></div></div>
+              </div>
+
+              <div class="sc-item">
+                <div class="sc-item-header">
+                  <span class="sc-name"><i class="fas fa-circle-check"></i> Google Ads Campaign Architecture &amp; Auditing</span>
+                  <div class="sc-score"><span class="score-val">88%</span><span class="level-badge advanced">Advanced</span></div>
+                </div>
+                <div class="sc-bar"><div class="sc-fill" style="--percent: 88%"><span class="sc-glow-tip"></span></div></div>
+              </div>
+
+              <div class="sc-item">
+                <div class="sc-item-header">
+                  <span class="sc-name"><i class="fas fa-circle-check"></i> Inventory Variance &amp; KPI Dashboards</span>
+                  <div class="sc-score"><span class="score-val">92%</span><span class="level-badge expert">Expert</span></div>
+                </div>
+                <div class="sc-bar"><div class="sc-fill" style="--percent: 92%"><span class="sc-glow-tip"></span></div></div>
+              </div>
+
+              <div class="sc-item">
+                <div class="sc-item-header">
+                  <span class="sc-name"><i class="fas fa-circle-check"></i> E-Commerce Backends &amp; Merchant Portals</span>
+                  <div class="sc-score"><span class="score-val">94%</span><span class="level-badge expert">Expert</span></div>
+                </div>
+                <div class="sc-bar"><div class="sc-fill" style="--percent: 94%"><span class="sc-glow-tip"></span></div></div>
+              </div>
+
+              <div class="sc-item">
+                <div class="sc-item-header">
+                  <span class="sc-name"><i class="fas fa-circle-check"></i> Data-Driven Operational Streamlining</span>
+                  <div class="sc-score"><span class="score-val">90%</span><span class="level-badge advanced">Advanced</span></div>
+                </div>
+                <div class="sc-bar"><div class="sc-fill" style="--percent: 90%"><span class="sc-glow-tip"></span></div></div>
+              </div>
+            </div>
+
+            <!-- Technology & Framework Chips -->
+            <div class="sc-tags-strip">
+              <span class="sc-chip"><i class="fab fa-google"></i> Google Ads ROAS</span>
+              <span class="sc-chip"><i class="fas fa-table-cells"></i> Advanced Spreadsheets</span>
+              <span class="sc-chip"><i class="fas fa-chart-pie"></i> Inventory Discrepancy Audits</span>
+              <span class="sc-chip"><i class="fas fa-chart-mixed"></i> KPI Dashboards</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Interactive Systems & Hardware Ecosystem Showcase -->
+        <div class="skills-ecosystem-wrapper reveal-up">
+          <div class="ecosystem-header">
+            <div>
+              <span class="ecosystem-tag"><i class="fas fa-cubes"></i> Applied Ecosystem</span>
+              <h3 class="ecosystem-title">Enterprise Systems &amp; Hardware Toolset</h3>
+            </div>
+            <p class="ecosystem-desc">Direct hands-on deployment and daily operational governance across 4 critical pillars.</p>
+          </div>
+
+          <div class="ecosystem-grid">
+            <div class="eco-card spotlight-card">
+              <div class="eco-head">
+                <div class="eco-icon"><i class="fas fa-cart-shopping"></i></div>
+                <h4>E-Commerce &amp; OMS</h4>
+              </div>
+              <ul class="eco-pills-list">
+                <li><i class="fab fa-shopify"></i> Shopify Admin &amp; Storefronts</li>
+                <li><i class="fab fa-wordpress"></i> WooCommerce Architecture</li>
+                <li><i class="fas fa-boxes-packing"></i> Order Management (OMS)</li>
+                <li><i class="fas fa-tags"></i> Dynamic SKU Catalog Tagging</li>
+              </ul>
+            </div>
+
+            <div class="eco-card spotlight-card">
+              <div class="eco-head">
+                <div class="eco-icon"><i class="fas fa-cash-register"></i></div>
+                <h4>Retail &amp; POS Hardware</h4>
+              </div>
+              <ul class="eco-pills-list">
+                <li><i class="fas fa-computer"></i> Touchscreen POS Terminals</li>
+                <li><i class="fas fa-barcode"></i> Laser Barcode Scanners</li>
+                <li><i class="fas fa-receipt"></i> Thermal Receipt Printers</li>
+                <li><i class="fas fa-money-bill-transfer"></i> Counter Cash Drawers</li>
+              </ul>
+            </div>
+
+            <div class="eco-card spotlight-card">
+              <div class="eco-head">
+                <div class="eco-icon"><i class="fas fa-building-shield"></i></div>
+                <h4>Facilities &amp; Infrastructure</h4>
+              </div>
+              <ul class="eco-pills-list">
+                <li><i class="fas fa-fingerprint"></i> Biometric Time-Attendance</li>
+                <li><i class="fas fa-video"></i> 24/7 CCTV &amp; DVR/NVR Networks</li>
+                <li><i class="fas fa-network-wired"></i> Office LAN &amp; Gigabit Routers</li>
+                <li><i class="fas fa-id-card-clip"></i> Corporate Fixed Asset Registers</li>
+              </ul>
+            </div>
+
+            <div class="eco-card spotlight-card">
+              <div class="eco-head">
+                <div class="eco-icon"><i class="fas fa-chart-mixed"></i></div>
+                <h4>Analytics &amp; Advertising</h4>
+              </div>
+              <ul class="eco-pills-list">
+                <li><i class="fab fa-google"></i> Google Ads Performance Search</li>
+                <li><i class="fas fa-table-list"></i> Quantitative Inventory Modeling</li>
+                <li><i class="fas fa-scale-balanced"></i> Stock Discrepancy Auditing</li>
+                <li><i class="fas fa-file-invoice-dollar"></i> Commercial Import &amp; Tax Vetting</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ──────────────────────────────────────────────
+         EDUCATION & CREDENTIALS
+    ─────────────────────────────────────────────── -->
+    <section class="section" id="education">
+      <div class="container">
+
+        <div class="section-badge reveal-up">
+          <span class="badge-num">05</span>
+          <span class="badge-title">Credentials</span>
+        </div>
+        <h2 class="section-title reveal-up">Academic Honors &amp; Certifications</h2>
+        <p class="section-subtitle reveal-up">
+          Rigorous academic grounding in business strategy paired with industry-tested practical training.
+        </p>
+
+        <div class="credentials-layout">
+
+          <!-- Left: Academic Degrees -->
+          <div class="cred-col">
+            <h3 class="cred-heading reveal-up"><i class="fas fa-graduation-cap"></i> Academic Excellence</h3>
+
+            <div class="edu-box spotlight-card reveal-up">
+              <div class="edu-top">
+                <span class="edu-tag">Master's Degree</span>
+                <span class="cgpa-pill"><i class="fas fa-star"></i> CGPA 3.68 / 4.00</span>
+              </div>
+              <h4 class="edu-degree">Master of Business Administration (MBA)</h4>
+              <p class="edu-field">Major in Marketing &amp; International Business</p>
+              <div class="edu-school">
+                <i class="fas fa-university"></i> International Islamic University Chittagong (IIUC)
+              </div>
+            </div>
+
+            <div class="edu-box spotlight-card reveal-up" style="--delay: 0.1s">
+              <div class="edu-top">
+                <span class="edu-tag">Bachelor's Degree</span>
+                <span class="cgpa-pill"><i class="fas fa-star"></i> CGPA 3.78 / 4.00</span>
+              </div>
+              <h4 class="edu-degree">Bachelor of Business Administration (BBA)</h4>
+              <p class="edu-field">Major in Marketing</p>
+              <div class="edu-school">
+                <i class="fas fa-university"></i> International Islamic University Chittagong (IIUC)
+              </div>
+            </div>
+
+            <div class="edu-box spotlight-card reveal-up" style="--delay: 0.2s">
+              <div class="edu-top">
+                <span class="edu-tag">Higher Secondary &amp; Secondary</span>
+                <span class="cgpa-pill"><i class="fas fa-award"></i> First Division</span>
+              </div>
+              <h4 class="edu-degree">HSC &amp; SSC — Business Studies</h4>
+              <p class="edu-field">Commerce Discipline</p>
+              <div class="edu-school">
+                <i class="fas fa-school"></i> Comilla Cantonment College &amp; High School
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Professional Training & Certifications -->
+          <div class="cred-col">
+            <h3 class="cred-heading reveal-up"><i class="fas fa-certificate"></i> Specialized Industry Training</h3>
+
+            <div class="cert-card spotlight-card reveal-up">
+              <div class="cert-icon-wrap"><i class="fas fa-chart-pie"></i></div>
+              <div class="cert-info">
+                <span class="cert-year">Oct 2012 – Dec 2012</span>
+                <h4>Research &amp; Data Analysis Internship</h4>
+                <p class="cert-org">Akij Food &amp; Beverage Ltd.</p>
+                <span class="cert-tag">Corporate Market Research</span>
+              </div>
+            </div>
+
+            <div class="cert-card spotlight-card reveal-up" style="--delay: 0.1s">
+              <div class="cert-icon-wrap"><i class="fas fa-ship"></i></div>
+              <div class="cert-info">
+                <span class="cert-year">2018</span>
+                <h4>Import Business &amp; Commercial Trade</h4>
+                <p class="cert-org">Import Business BD</p>
+                <span class="cert-tag">Global Procurement &amp; Customs</span>
+              </div>
+            </div>
+
+            <div class="cert-card spotlight-card reveal-up" style="--delay: 0.2s">
+              <div class="cert-icon-wrap"><i class="fas fa-file-invoice-dollar"></i></div>
+              <div class="cert-info">
+                <span class="cert-year">2019</span>
+                <h4>Individual Taxpayer Return Preparation</h4>
+                <p class="cert-org">Pencil Box</p>
+                <span class="cert-tag">Regulatory Compliance</span>
+              </div>
+            </div>
+
+            <div class="cert-card spotlight-card reveal-up" style="--delay: 0.3s">
+              <div class="cert-icon-wrap"><i class="fas fa-microchip"></i></div>
+              <div class="cert-info">
+                <span class="cert-year">2015</span>
+                <h4>National Skill Standard Basic Certification</h4>
+                <p class="cert-org">Bangladesh Technical Education Board (BTEB)</p>
+                <span class="cert-tag">Technical Competency</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ──────────────────────────────────────────────
+         EXECUTIVE RESUME & FULL DOSSIER SECTION
+    ─────────────────────────────────────────────── -->
+    <section class="section" id="resume">
+      <div class="container">
+
+        <div class="section-badge reveal-up">
+          <span class="badge-num">06</span>
+          <span class="badge-title">Executive Dossier</span>
+        </div>
+        <h2 class="section-title reveal-up">Curriculum Vitae &amp; Verified Records</h2>
+        <p class="section-subtitle reveal-up">
+          Complete executive profile ready for corporate board review, ATS screening, or instant offline download.
+        </p>
+
+        <div class="dossier-layout">
+
+          <!-- Unified Executive Dossier Card -->
+          <div class="dossier-card dossier-unified-card spotlight-card reveal-up">
+            
+            <!-- Top Verification & Document Meta Bar -->
+            <div class="dossier-meta-bar">
+              <span class="dossier-badge"><i class="fas fa-badge-check"></i> Verified Profile</span>
+              <span class="dossier-ref-tag"><i class="fas fa-file-shield"></i> Document Ref: SP-CV-2026</span>
+              <span class="dossier-status-pill"><i class="fas fa-circle-check"></i> Board-Ready &amp; ATS-Screened</span>
+            </div>
+
+            <!-- Executive Identity Header: Info on Left, Large Clickable Portrait on Right -->
+            <div class="dossier-card-header">
+              <div class="dossier-title-group">
+                <h3>Mohammad Shjjad Patwary</h3>
+                <p class="dossier-role-title"><i class="fas fa-shield-check"></i> Manager – Operations, Corporate Admin, IT &amp; Inventory</p>
+                <div class="dossier-quick-contacts">
+                  <span><i class="fas fa-envelope"></i> shjjadpatwary@gmail.com</span>
+                  <a href="https://wa.me/8801737908116" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> +880 1737 908116 (Phone &amp; WhatsApp)</a>
+                </div>
+              </div>
+              <button class="dossier-avatar-btn" id="dossier-avatar-btn" type="button" aria-label="Open Full Executive CV" title="Click to view full interactive CV">
+                <img src="profile.jpg" alt="Mohammad Shjjad Patwary" class="dossier-avatar-img" />
+                <span class="dossier-avatar-hover-hint"><i class="fas fa-expand"></i></span>
+              </button>
+            </div>
+
+            <!-- Executive Summary -->
+            <p class="dossier-summary-text">
+              10+ years of high-impact professional expertise bridging corporate office administration, multi-channel warehouse inventory synchronization, retail POS hardware rollouts, and e-commerce systems. Holds an MBA (CGPA 3.68) and BBA (CGPA 3.78) from IIUC with proven records in fixed asset governance, vendor procurement, biometric attendance SOPs, eliminating phantom stock, and achieving 100% audit compliance.
+            </p>
+
+            <!-- Key Metrics Grid -->
+            <div class="dossier-metrics-grid">
+              <div class="dossier-metric-pill">
+                <span class="dmp-num">10+ Years</span>
+                <span class="dmp-lbl">Progressive Track Record</span>
+              </div>
+              <div class="dossier-metric-pill">
+                <span class="dmp-num">3.68 CGPA</span>
+                <span class="dmp-lbl">MBA Honours (IIUC)</span>
+              </div>
+              <div class="dossier-metric-pill">
+                <span class="dmp-num">100% Audit</span>
+                <span class="dmp-lbl">Asset Accountability</span>
+              </div>
+              <div class="dossier-metric-pill">
+                <span class="dmp-num">0 Conflicts</span>
+                <span class="dmp-lbl">POS &amp; Web Sync Engine</span>
+              </div>
+            </div>
+
+            <!-- 4 Core Competency Pillars Grid -->
+            <div class="dossier-pillars-grid">
+              <div class="dossier-pillar-item">
+                <div class="pillar-icon"><i class="fas fa-building-user"></i></div>
+                <div class="pillar-text">
+                  <strong>Corporate Admin &amp; Facility SOPs</strong>
+                  <span>Facility governance, biometric attendance, fixed asset registers, contractor vetting &amp; accounts payable invoice verification.</span>
+                </div>
+              </div>
+              <div class="dossier-pillar-item">
+                <div class="pillar-icon"><i class="fas fa-boxes-stacked"></i></div>
+                <div class="pillar-text">
+                  <strong>Warehouse &amp; Inventory GRN</strong>
+                  <span>Full-lifecycle inventory, 2,000+ SKU barcode catalog, dock intake inspection, variance audits &amp; safety-stock modeling.</span>
+                </div>
+              </div>
+              <div class="dossier-pillar-item">
+                <div class="pillar-icon"><i class="fas fa-cash-register"></i></div>
+                <div class="pillar-text">
+                  <strong>Retail POS &amp; LAN IT Systems</strong>
+                  <span>Multi-outlet POS terminals, staff training, network infrastructure, 24/7 CCTV surveillance &amp; workstation IT support.</span>
+                </div>
+              </div>
+              <div class="dossier-pillar-item">
+                <div class="pillar-icon"><i class="fas fa-chart-line"></i></div>
+                <div class="pillar-text">
+                  <strong>E-Commerce &amp; Media Analytics</strong>
+                  <span>Omnichannel inventory integration, online checkout workflows, Google Ads budget optimization &amp; marketing ROI.</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Actions Bar: Direct 1-Click Download, Share & Interactive View -->
+            <div class="dossier-actions-grid">
+              <button class="btn btn-primary" id="dossier-open-modal-btn">
+                <i class="fas fa-expand"></i> View Interactive CV
+              </button>
+              <div class="cv-dropdown-wrapper dossier-dropdown">
+                <button class="btn btn-secondary cv-dropdown-toggle" id="dossier-pdf-btn" type="button" aria-expanded="false" aria-haspopup="true" title="Download Official Executive CV (PDF)">
+                  <i class="fas fa-download"></i> <span>Download CV</span> <i class="fas fa-chevron-down cv-caret"></i>
+                </button>
+                <div class="cv-dropdown-menu" id="dossier-cv-dropdown">
+                  <div class="cv-dropdown-header">
+                    <div class="cv-dropdown-title-group">
+                      <i class="fas fa-file-arrow-down"></i>
+                      <span class="cv-dropdown-title">Download CV</span>
+                    </div>
+                    <button type="button" class="cv-dropdown-close-btn" aria-label="Close menu" title="Close">
+                      <i class="fas fa-xmark"></i>
+                    </button>
+                  </div>
+                  <a href="Mohammad_Shjjad_Patwary_Executive_CV.pdf" download="Mohammad_Shjjad_Patwary_Executive_CV.pdf" class="cv-dropdown-item direct-download-link" id="dossier-cv-with-photo">
+                    <i class="fas fa-id-badge"></i>
+                    <div class="dropdown-item-text">
+                      <strong>With Photo</strong>
+                      <span>Executive format with portrait</span>
+                    </div>
+                  </a>
+                  <a href="Mohammad_Shjjad_Patwary_Executive_CV_No_Photo.pdf" download="Mohammad_Shjjad_Patwary_Executive_CV_No_Photo.pdf" class="cv-dropdown-item direct-download-link" id="dossier-cv-no-photo">
+                    <i class="fas fa-file-alt"></i>
+                    <div class="dropdown-item-text">
+                      <strong>Without Photo</strong>
+                      <span>ATS-friendly clean format</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <button class="btn btn-secondary" id="dossier-print-btn">
+                <i class="fas fa-print"></i> Print CV
+              </button>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ──────────────────────────────────────────────
+         CONTACT SECTION
+    ─────────────────────────────────────────────── -->
+    <section class="section section-darker" id="contact">
+      <div class="container">
+
+        <div class="section-badge reveal-up">
+          <span class="badge-num">07</span>
+          <span class="badge-title">Direct Connection</span>
+        </div>
+        <h2 class="section-title reveal-up">Let's Build Resilient Operations</h2>
+        <p class="section-subtitle reveal-up">
+          Available for senior management opportunities, operations consulting, and inventory audits.
+        </p>
+
+        <div class="contact-grid">
+
+          <!-- Channels Column -->
+          <div class="contact-channels-col reveal-up">
+
+            <!-- Channel Card 1: Email -->
+            <div class="channel-card spotlight-card">
+              <div class="ch-icon email-icon"><i class="fas fa-envelope"></i></div>
+              <div class="ch-details">
+                <span class="ch-type">Email Address</span>
+                <a href="mailto:shjjadpatwary@gmail.com" class="ch-link">shjjadpatwary@gmail.com</a>
+                <span class="ch-subtext">Typically replies within a few hours</span>
+              </div>
+              <button class="copy-btn" data-copy="shjjadpatwary@gmail.com" aria-label="Copy Email to clipboard">
+                <i class="fas fa-copy"></i>
+              </button>
+            </div>
+
+            <!-- Channel Card 2: Phone & WhatsApp (Merged) -->
+            <div class="channel-card spotlight-card">
+              <div class="ch-icon wa-icon"><i class="fab fa-whatsapp"></i></div>
+              <div class="ch-details">
+                <span class="ch-type">Phone &amp; WhatsApp</span>
+                <a href="https://wa.me/8801737908116" target="_blank" rel="noopener" class="ch-link">+880 1737 908116</a>
+                <span class="ch-subtext">Direct voice call &amp; instant WhatsApp chat</span>
+              </div>
+              <div class="ch-actions">
+                <a href="https://wa.me/8801737908116" target="_blank" rel="noopener" class="action-icon-btn wa-btn" aria-label="Chat on WhatsApp" title="Chat on WhatsApp">
+                  <i class="fab fa-whatsapp"></i>
+                </a>
+                <button class="copy-btn" data-copy="+8801737908116" aria-label="Copy Phone Number to clipboard" title="Copy Number">
+                  <i class="fas fa-copy"></i>
+                </button>
+              </div>
+            </div>
+
+            <!-- Channel Card 3: Location -->
+            <div class="channel-card spotlight-card">
+              <div class="ch-icon loc-icon"><i class="fas fa-map-location-dot"></i></div>
+              <div class="ch-details">
+                <span class="ch-type">Primary Location</span>
+                <span class="ch-val">Cumilla Cantonment, Bangladesh</span>
+                <span class="ch-subtext">Open to on-site, hybrid &amp; remote roles</span>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ──────────────────────────────────────────────
+       EXECUTIVE RESUME / CV MODAL (PRINT READY)
+  ─────────────────────────────────────────────── -->
+  <div class="resume-modal-backdrop" id="resume-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="resume-title">
+    <div class="resume-modal-window">
+      
+      <!-- Modal Header Toolbar -->
+      <div class="modal-toolbar">
+        <div class="modal-title-group">
+          <span class="modal-tag">Curriculum Vitae</span>
+          <h2 id="resume-title">Mohammad Shjjad Patwary — Executive Resume</h2>
+        </div>
+        <div class="modal-actions">
+          <div class="cv-dropdown-wrapper modal-dropdown">
+            <button class="modal-btn save-pdf-btn cv-dropdown-toggle" id="save-pdf-btn" type="button" aria-expanded="false" aria-haspopup="true" title="Download Official Executive CV (PDF)">
+              <i class="fas fa-download"></i> <span>Download CV</span> <i class="fas fa-chevron-down cv-caret"></i>
+            </button>
+            <div class="cv-dropdown-menu" id="modal-cv-dropdown">
+              <div class="cv-dropdown-header">
+                <div class="cv-dropdown-title-group">
+                  <i class="fas fa-file-arrow-down"></i>
+                  <span class="cv-dropdown-title">Download CV</span>
+                </div>
+                <button type="button" class="cv-dropdown-close-btn" aria-label="Close menu" title="Close">
+                  <i class="fas fa-xmark"></i>
+                </button>
+              </div>
+              <a href="Mohammad_Shjjad_Patwary_Executive_CV.pdf" download="Mohammad_Shjjad_Patwary_Executive_CV.pdf" class="cv-dropdown-item direct-download-link" id="modal-cv-with-photo">
+                <i class="fas fa-id-badge"></i>
+                <div class="dropdown-item-text">
+                  <strong>With Photo</strong>
+                  <span>Executive format with portrait</span>
+                </div>
+              </a>
+              <a href="Mohammad_Shjjad_Patwary_Executive_CV_No_Photo.pdf" download="Mohammad_Shjjad_Patwary_Executive_CV_No_Photo.pdf" class="cv-dropdown-item direct-download-link" id="modal-cv-no-photo">
+                <i class="fas fa-file-alt"></i>
+                <div class="dropdown-item-text">
+                  <strong>Without Photo</strong>
+                  <span>ATS-friendly clean format</span>
+                </div>
+              </a>
+            </div>
+          </div>
+          <button class="modal-btn print-btn" id="print-resume-btn" title="Print document (A4 ATS format)">
+            <i class="fas fa-print"></i> <span>Print CV</span>
+          </button>
+          <button class="modal-close-btn" id="close-resume-btn" aria-label="Close resume viewer">
+            <i class="fas fa-xmark"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Resume Printable Document -->
+      <div class="resume-paper" id="printable-resume">
+
+        <!-- Resume Header -->
+        <div class="cv-header">
+          <div class="cv-header-flex">
+            <div class="cv-name-col">
+              <h1 class="cv-name">Mohammad Shjjad Patwary</h1>
+              <p class="cv-tagline">Manager – Operations, Corporate Admin, IT &amp; Inventory &bull; 10+ Years Professional Track Record</p>
+              <div class="cv-meta-links">
+                <span><i class="fas fa-envelope"></i> shjjadpatwary@gmail.com</span>
+                <a href="https://wa.me/8801737908116" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> +880 1737 908116 (Phone &amp; WhatsApp)</a>
+              </div>
+            </div>
+            <div class="cv-avatar-col">
+              <button class="cv-avatar-btn" id="cv-avatar-btn" type="button" aria-label="View Full Portrait" title="Click to view full portrait">
+                <img src="profile.jpg" alt="Mohammad Shjjad Patwary" class="cv-avatar-img" />
+                <span class="cv-avatar-zoom-badge" aria-hidden="true"><i class="fas fa-magnifying-glass-plus"></i></span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Professional Summary -->
+        <div class="cv-section">
+          <h3 class="cv-section-title"><i class="fas fa-user-tie"></i> Professional Summary</h3>
+          <p class="cv-text">
+            Results-driven Operations, Corporate Administration &amp; IT Manager with 10+ years of comprehensive expertise leading corporate administrative governance, warehouse inventory synchronization, retail POS deployments, and e-commerce systems. Proven track record in fixed asset accountability, vendor procurement &amp; contract negotiations, biometric attendance SOPs, and cross-channel stock reconciliation, delivering high operational accuracy, cost efficiency, and administrative precision through technology-driven solutions.
+          </p>
+        </div>
+
+        <!-- Core Competencies -->
+        <div class="cv-section">
+          <h3 class="cv-section-title"><i class="fas fa-layer-group"></i> Core Competencies</h3>
+          <div class="cv-competencies-grid">
+            <div class="cv-competency-item"><i class="fas fa-check-circle"></i> Corporate Office Administration &amp; SOPs</div>
+            <div class="cv-competency-item"><i class="fas fa-check-circle"></i> Fixed Asset Registers &amp; Audit Governance</div>
+            <div class="cv-competency-item"><i class="fas fa-check-circle"></i> Vendor Procurement &amp; Rate Negotiations</div>
+            <div class="cv-competency-item"><i class="fas fa-check-circle"></i> Biometric Attendance &amp; Admin HR Records</div>
+            <div class="cv-competency-item"><i class="fas fa-check-circle"></i> Facility Operations &amp; CCTV Surveillance</div>
+            <div class="cv-competency-item"><i class="fas fa-check-circle"></i> Warehouse &amp; Store Operations Management</div>
+            <div class="cv-competency-item"><i class="fas fa-check-circle"></i> POS &amp; Omnichannel Inventory Integration</div>
+            <div class="cv-competency-item"><i class="fas fa-check-circle"></i> Inventory Planning, Stock Control &amp; GRN</div>
+            <div class="cv-competency-item"><i class="fas fa-check-circle"></i> Stock Reconciliation &amp; Cycle Discrepancy Audits</div>
+            <div class="cv-competency-item"><i class="fas fa-check-circle"></i> SKU Architecture &amp; Barcode Management</div>
+            <div class="cv-competency-item"><i class="fas fa-check-circle"></i> Order Management Systems (OMS) &amp; Logistics</div>
+            <div class="cv-competency-item"><i class="fas fa-check-circle"></i> Retail POS Systems Deployment &amp; Training</div>
+            <div class="cv-competency-item"><i class="fas fa-check-circle"></i> IT Equipment Procurement &amp; Technical Support</div>
+            <div class="cv-competency-item"><i class="fas fa-check-circle"></i> Website Administration &amp; Internal SEO</div>
+            <div class="cv-competency-item"><i class="fas fa-check-circle"></i> Customer Order Processing &amp; Tracking</div>
+            <div class="cv-competency-item"><i class="fas fa-check-circle"></i> Data Reporting &amp; Operational Analytics</div>
+          </div>
+        </div>
+
+        <!-- Professional Experience -->
+        <div class="cv-section">
+          <h3 class="cv-section-title"><i class="fas fa-briefcase"></i> Professional Experience</h3>
+
+          <!-- Role 1 -->
+          <div class="cv-job">
+            <div class="cv-job-header">
+              <span class="cv-job-title">1. Manager – Operations, Corporate Admin, IT &amp; Inventory</span>
+              <span class="cv-job-date">May 2024 – Apr 2026</span>
+            </div>
+            <div class="cv-job-company">Anzaar &bull; Dhaka, Bangladesh</div>
+            <ul class="cv-bullet-list">
+              <li>Direct day-to-day administrative operations, IT procurement, facility upkeep, and inventory synchronization across multi-branch retail network.</li>
+              <li>Formulate administrative standard operating procedures (SOPs), vendor service contracts, and executive reporting workflows.</li>
+              <li>Manage end-to-end inventory lifecycle including stock receiving, transfers, cycle counting, and variance reconciliation.</li>
+              <li>Synchronize physical warehouse stock, multi-branch POS counters, and e-commerce storefront with strict zero-variance protocols.</li>
+              <li>Standardize 2,000+ SKU product catalog with barcode label systems and taxonomy structures, accelerating upload speed by 40%.</li>
+              <li>Deploy and maintain retail POS systems across outlets, providing staff training and ensuring 100% system uptime.</li>
+              <li>Coordinate IT hardware procurement, office workstations, LAN infrastructure, and technical support.</li>
+              <li>Oversee online order processing workflows, customer fulfillment, and accurate tracking systems.</li>
+            </ul>
+
+            <!-- Key Achievements -->
+            <div class="cv-achievements-box">
+              <div class="cv-achievements-title"><i class="fas fa-trophy"></i> Key Achievements</div>
+              <ul class="cv-achievements-grid">
+                <li>Maintained 95%+ inventory accuracy across warehouse &amp; retail branches</li>
+                <li>Reduced stock mismatch by 30%+ through strict GRN audit cycles</li>
+                <li>Managed 2,000+ SKUs efficiently with barcode catalog standards</li>
+                <li>Improved order fulfillment speed &amp; dispatch turnaround by 40%</li>
+                <li>Ensured 100% stable POS &amp; IT infrastructure uptime during high-volume campaigns</li>
+                <li>Standardized administrative vendor procurement &amp; equipment records</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Role 2 -->
+          <div class="cv-job">
+            <div class="cv-job-header">
+              <span class="cv-job-title">2. Freelance Media Buyer – Google Ads</span>
+              <span class="cv-job-date">Mar 2022 – Apr 2024</span>
+            </div>
+            <div class="cv-job-company">Independent Consulting &bull; Remote</div>
+            <ul class="cv-bullet-list">
+              <li>Managed Google Ads acquisition campaigns including keyword research, audience targeting, and budget administration.</li>
+              <li>Analyzed campaign performance data, optimized advertising expenditures, and improved marketing ROI.</li>
+              <li>Executed data-driven audience segmentation and keyword bidding optimization to maximize returns.</li>
+            </ul>
+          </div>
+
+          <!-- Formal Two-Page CV Print Boundary -->
+          <div class="cv-page-break" aria-hidden="true"></div>
+
+          <!-- Role 3 -->
+          <div class="cv-job">
+            <div class="cv-job-header">
+              <span class="cv-job-title">3. Admin Operations &amp; Inventory Executive</span>
+              <span class="cv-job-date">Apr 2018 – Dec 2021</span>
+            </div>
+            <div class="cv-job-company">Hive Interiors &bull; Dhaka, Bangladesh</div>
+            <ul class="cv-bullet-list">
+              <li>Administered complete corporate office operations, facilities management, executive correspondence, and administrative documentation.</li>
+              <li>Governed fixed asset registers, architectural raw material samples, and office resources with 100% audit compliance.</li>
+              <li>Managed biometric employee attendance systems, leave administration, HR documentation, and staff ID credential protocols.</li>
+              <li>Directed vendor procurement cycles, contractor negotiations, purchase orders, and accounts payable invoice vetting.</li>
+              <li>Supervised corporate facility infrastructure, 24/7 CCTV surveillance networks, workstation setups, and office LAN connectivity.</li>
+              <li>Provided comprehensive administrative and IT support for office software and operational systems.</li>
+            </ul>
+          </div>
+
+          <!-- Role 4 -->
+          <div class="cv-job">
+            <div class="cv-job-header">
+              <span class="cv-job-title">4. Inventory Support &amp; Admin Executive</span>
+              <span class="cv-job-date">Mar 2014 – Mar 2018</span>
+            </div>
+            <div class="cv-job-company">NS Corporation Ltd. &bull; Dhaka, Bangladesh</div>
+            <ul class="cv-bullet-list">
+              <li>Maintained corporate administrative records, commercial dispatch files, resource tracking, and logistics documentation.</li>
+              <li>Prepared daily and weekly stock balance sheets, discrepancy audits, and operational reports for executive management.</li>
+              <li>Conducted receiving dock inspections, verifying supplier packing lists, purchase orders, and binning compliance.</li>
+              <li>Managed office reporting systems, cross-departmental coordination, and data verification tasks.</li>
+            </ul>
+          </div>
+
+        </div>
+
+        <!-- Education -->
+        <div class="cv-section">
+          <h3 class="cv-section-title"><i class="fas fa-graduation-cap"></i> Education</h3>
+          <div class="cv-edu-row">
+            <div>
+              <strong>MBA – Marketing &amp; International Business</strong>
+              <p>International Islamic University Chittagong (IIUC)</p>
+            </div>
+            <div class="cv-edu-meta"><strong>CGPA: 3.68 / 4.00</strong></div>
+          </div>
+          <div class="cv-edu-row">
+            <div>
+              <strong>BBA – Marketing</strong>
+              <p>International Islamic University Chittagong (IIUC)</p>
+            </div>
+            <div class="cv-edu-meta"><strong>CGPA: 3.78 / 4.00</strong></div>
+          </div>
+          <div class="cv-edu-row">
+            <div>
+              <strong>HSC – Business Studies</strong>
+              <p>Comilla Cantonment College</p>
+            </div>
+            <div class="cv-edu-meta"><span>Comilla Board</span></div>
+          </div>
+          <div class="cv-edu-row">
+            <div>
+              <strong>SSC – Business Studies</strong>
+              <p>Comilla Cantonment High School</p>
+            </div>
+            <div class="cv-edu-meta"><span>Comilla Board</span></div>
+          </div>
+        </div>
+
+        <!-- Internship Experience -->
+        <div class="cv-section">
+          <h3 class="cv-section-title"><i class="fas fa-briefcase-blank"></i> Internship Experience</h3>
+          <div class="cv-job">
+            <div class="cv-job-header">
+              <span class="cv-job-title">Intern (Akij Food &amp; Beverage Ltd.)</span>
+              <span class="cv-job-date">Oct 2012 – Dec 2012</span>
+            </div>
+            <p class="cv-text">
+              Conducted research and data analysis for the Research Department as an Intern.
+            </p>
+          </div>
+        </div>
+
+        <!-- Training & Certifications -->
+        <div class="cv-section">
+          <h3 class="cv-section-title"><i class="fas fa-certificate"></i> Training &amp; Certifications</h3>
+          <ul class="cv-cert-list">
+            <li><strong>National Skill Standard Basic Training:</strong> Bangladesh Technical Education Board (2015)</li>
+            <li><strong>Preparing Tax Return by Individual Taxpayer:</strong> Pencil Box (2019)</li>
+            <li><strong>Import Business Training:</strong> Import Business BD (2018)</li>
+          </ul>
+        </div>
+
+        <!-- Languages -->
+        <div class="cv-section">
+          <h3 class="cv-section-title"><i class="fas fa-language"></i> Languages</h3>
+          <div class="cv-lang-grid">
+            <div class="cv-lang-card">
+              <span class="cv-lang-name"><i class="fas fa-comment-dots"></i> Bangla</span>
+              <span class="cv-lang-level">Native</span>
+            </div>
+            <div class="cv-lang-card">
+              <span class="cv-lang-name"><i class="fas fa-globe"></i> English</span>
+              <span class="cv-lang-level">Professional Working Proficiency</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- References -->
+        <div class="cv-section">
+          <h3 class="cv-section-title"><i class="fas fa-address-book"></i> References</h3>
+          <div class="cv-ref-card">
+            <i class="fas fa-shield-check"></i>
+            <div>
+              <strong>Available upon request</strong>
+              <p>Professional, operational, and academic references available upon executive request.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- ──────────────────────────────────────────────
+       EXECUTIVE PORTRAIT LIGHTBOX MODAL
+  ─────────────────────────────────────────────── -->
+  <div class="photo-lightbox-backdrop" id="photo-lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Portrait Preview">
+    <div class="photo-lightbox-card">
+      <button class="photo-lightbox-close" id="photo-lightbox-close" type="button" aria-label="Close portrait preview">
+        <i class="fas fa-xmark"></i>
+      </button>
+      <div class="photo-lightbox-frame">
+        <img src="profile.jpg" alt="Mohammad Shjjad Patwary — Executive Headshot" class="photo-lightbox-img" />
+      </div>
+      <div class="photo-lightbox-footer">
+        <div class="photo-lightbox-name">Mohammad Shjjad Patwary</div>
+        <div class="photo-lightbox-title">Senior Operations, Corporate Admin &amp; IT</div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ──────────────────────────────────────────────
+       EXECUTIVE DOSSIER REQUEST MODAL
+  ─────────────────────────────────────────────── -->
+  <div class="dossier-modal-backdrop" id="dossier-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="dossier-modal-title">
+    <div class="dossier-modal-window">
+      <div class="dossier-modal-header">
+        <div class="dossier-modal-icon"><i class="fas fa-file-shield"></i></div>
+        <div>
+          <h3 id="dossier-modal-title">Request Confidential Executive Dossier</h3>
+          <p>Direct priority dispatch from Mohammad Shjjad Patwary</p>
+        </div>
+        <button class="dossier-close-btn" id="close-dossier-btn" aria-label="Close dossier dialog">
+          <i class="fas fa-xmark"></i>
+        </button>
+      </div>
+
+      <div class="dossier-modal-body">
+        <div class="dossier-notice">
+          The confidential dossier includes verified academic certificates (MBA &amp; BBA from IIUC), former employer reference contacts from Hive Interiors &amp; Anzaar, and proprietary inventory audit templates.
+        </div>
+
+        <div class="dossier-options-grid">
+          <!-- Option 1: Direct Email -->
+          <a href="mailto:shjjadpatwary@gmail.com?subject=Confidential%20Executive%20Dossier%20Request%20-%20Mohammad%20Shjjad%20Patwary&body=Dear%20Mohammad%20Shjjad%20Patwary%2C%0A%0AWe%20reviewed%20your%20executive%20portfolio%20and%20would%20like%20to%20request%20your%20complete%20confidential%20dossier%2C%20including%20certified%20academic%20records%2C%20reference%20contacts%2C%20and%20operational%20audit%20documentation.%0A%0AOrganization%3A%20%0APosition%20%2F%20Engagement%20Scope%3A%20%0AYour%20Contact%20Number%3A%20%0A%0AThank%20you." class="dossier-option-card" id="mail-dossier-link">
+            <div class="opt-icon mail"><i class="fas fa-envelope-open-text"></i></div>
+            <div class="opt-content">
+              <strong>Open Pre-Formatted Email</strong>
+              <span>Launches your mail client with pre-filled dossier request &amp; role details</span>
+            </div>
+            <i class="fas fa-arrow-right opt-arrow"></i>
+          </a>
+
+          <!-- Option 2: Copy to Clipboard -->
+          <button class="dossier-option-card" id="copy-dossier-email-btn" type="button">
+            <div class="opt-icon copy"><i class="fas fa-copy"></i></div>
+            <div class="opt-content">
+              <strong>Copy Email Address &amp; Template</strong>
+              <span>shjjadpatwary@gmail.com — Ready to paste into Gmail or webmail</span>
+            </div>
+            <i class="fas fa-arrow-right opt-arrow" id="copy-dossier-arrow"></i>
+          </button>
+
+          <!-- Option 3: WhatsApp Direct -->
+          <a href="https://wa.me/8801737908116?text=Hi%20Mohammad%20Shjjad%20Patwary,%20I%20reviewed%20your%20executive%20portfolio%20and%20would%20like%20to%20request%20your%20full%20dossier%20and%20references." target="_blank" rel="noopener" class="dossier-option-card">
+            <div class="opt-icon wa"><i class="fab fa-whatsapp"></i></div>
+            <div class="opt-content">
+              <strong>Request Directly on WhatsApp</strong>
+              <span>+880 1737 908116 — Direct line for rapid executive turnaround</span>
+            </div>
+            <i class="fas fa-arrow-right opt-arrow"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ──────────────────────────────────────────────
+       FOOTER
+  ─────────────────────────────────────────────── -->
+  <footer class="site-footer">
+    <div class="footer-ambient-glow" aria-hidden="true"></div>
+    <div class="container">
+      
+      <div class="footer-top-grid">
+
+        <!-- Brand Col -->
+        <div class="footer-brand-col">
+          <a href="#home" class="footer-logo">
+            <span class="logo-mark">SP</span>
+            <span>Mohammad Shjjad Patwary</span>
+          </a>
+          <p class="footer-desc">
+            Manager – Operations, Corporate Admin, IT &amp; Inventory dedicated to building synchronized,
+            accurate, and scalable systems that unite physical facilities and digital operations.
+          </p>
+          <div class="footer-social-strip">
+            <a href="mailto:shjjadpatwary@gmail.com" class="fs-icon" aria-label="Send Email" title="Email"><i class="fas fa-envelope"></i></a>
+            <a href="https://wa.me/8801737908116" target="_blank" rel="noopener" class="fs-icon wa" aria-label="WhatsApp" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick Nav -->
+        <div class="footer-links-col">
+          <h4>Navigation</h4>
+          <ul class="footer-nav-list">
+            <li><a href="#about"><i class="fas fa-angle-right"></i> About Me</a></li>
+            <li><a href="#impact"><i class="fas fa-angle-right"></i> Key Impact</a></li>
+            <li><a href="#experience"><i class="fas fa-angle-right"></i> Experience</a></li>
+            <li><a href="#skills"><i class="fas fa-angle-right"></i> Competencies</a></li>
+            <li><a href="#education"><i class="fas fa-angle-right"></i> Credentials</a></li>
+            <li><a href="#resume"><i class="fas fa-angle-right"></i> Executive Resume</a></li>
+            <li><a href="#contact"><i class="fas fa-angle-right"></i> Contact Hub</a></li>
+          </ul>
+        </div>
+
+        <!-- Direct Contact Col -->
+        <div class="footer-contact-col">
+          <h4>Contact &amp; Location</h4>
+          <ul class="footer-contacts">
+            <li>
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:shjjadpatwary@gmail.com">shjjadpatwary@gmail.com</a>
+            </li>
+            <li>
+              <i class="fab fa-whatsapp"></i>
+              <a href="https://wa.me/8801737908116" target="_blank" rel="noopener">+880 1737 908116 (Phone &amp; WhatsApp)</a>
+            </li>
+            <li>
+              <i class="fas fa-map-pin"></i>
+              <span>Cumilla Cantonment, Bangladesh</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom-bar">
+        <p class="copyright-text">&copy; 2026 Mohammad Shjjad Patwary. All rights reserved.</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Mobile WhatsApp Quick Connect Floating Button -->
+  <a href="https://wa.me/8801737908116" target="_blank" rel="noopener" class="mobile-wa-float" id="mobile-wa-float" aria-label="Chat directly on WhatsApp" title="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" class="btt-btn magnetic" aria-label="Back to Top" title="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- Toast Notification Popup -->
+  <div id="toast" class="toast-notification" role="alert" aria-live="polite">
+    <div class="toast-body">
+      <i class="fas fa-circle-check toast-icon"></i>
+      <span id="toast-message">Copied to clipboard</span>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>

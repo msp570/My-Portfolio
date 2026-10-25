@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Mohammad Shjjad Patwary — Executive Curriculum Vitae</title>
+  <meta name="description" content="Mohammad Shjjad Patwary | Official Executive Curriculum Vitae — Operations, Corporate Administration, IT & Inventory Management." />
+  <meta name="author" content="Mohammad Shjjad Patwary" />
+
+  <!-- Preconnect Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet" />
+
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <!-- Base stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+    /* ─── STANDALONE EXECUTIVE CV VIEW STYLES ───────────────────── */
+    :root {
+      --cv-bg: #090d16;
+      --cv-paper-bg: #0f172a;
+      --cv-toolbar-bg: rgba(15, 23, 42, 0.88);
+      --cv-border-color: rgba(99, 102, 241, 0.2);
+    }
+
+    [data-theme="light"] {
+      --cv-bg: #f1f5f9;
+      --cv-paper-bg: #ffffff;
+      --cv-toolbar-bg: rgba(255, 255, 255, 0.92);
+      --cv-border-color: rgba(203, 213, 225, 0.8);
+    }
+
+    body.cv-page-body {
+      background-color: var(--cv-bg);
+      color: var(--c-text);
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      min-height: 100vh;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /* Fixed Top Action Toolbar */
+    .cv-top-toolbar {
+      position: sticky;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 100;
+      background: var(--cv-toolbar-bg);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--cv-border-color);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+      padding: 0.65rem 1rem;
+      box-sizing: border-box;
+    }
+
+    .cv-toolbar-inner {
+      max-width: 960px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.75rem;
+    }
+
+    .cv-toolbar-brand {
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .cv-toolbar-brand .logo-badge {
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+      background: var(--grad-primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ffffff;
+      font-weight: 800;
+      font-size: 0.85rem;
+    }
+
+    .cv-toolbar-brand span {
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: var(--c-text);
+      letter-spacing: -0.01em;
+    }
+
+    .cv-toolbar-actions {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+
+    .cv-tool-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.45rem;
+      padding: 0.48rem 0.95rem;
+      border-radius: var(--radius-full);
+      font-size: 0.82rem;
+      font-weight: 600;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      white-space: nowrap;
+      border: 1px solid transparent;
+      box-sizing: border-box;
+    }
+
+    .cv-tool-btn.btn-primary {
+      background: var(--c-primary);
+      color: #ffffff;
+      box-shadow: 0 2px 10px rgba(99, 102, 241, 0.35);
+    }
+
+    .cv-tool-btn.btn-primary:hover {
+      background: var(--c-primary-light);
+      transform: translateY(-1px);
+    }
+
+    .cv-tool-btn.btn-secondary {
+      background: rgba(255, 255, 255, 0.08);
+      border-color: var(--cv-border-color);
+      color: var(--c-text);
+    }
+
+    .cv-tool-btn.btn-secondary:hover {
+      background: rgba(255, 255, 255, 0.16);
+      color: #ffffff;
+    }
+
+    [data-theme="light"] .cv-tool-btn.btn-secondary {
+      background: rgba(0, 0, 0, 0.04);
+      color: #1e293b;
+    }
+
+    .cv-tool-btn.btn-share {
+      background: rgba(147, 51, 234, 0.14);
+      border-color: rgba(147, 51, 234, 0.35);
+      color: #c084fc;
+    }
+
+    .cv-tool-btn.btn-share:hover {
+      background: #9333ea;
+      color: #ffffff;
+    }
+
+    [data-theme="light"] .cv-tool-btn.btn-share {
+      background: rgba(147, 51, 234, 0.1);
+      color: #7e22ce;
+    }
+
+    .cv-tool-btn.btn-theme {
+      width: 36px;
+      height: 36px;
+      padding: 0;
+      border-radius: 50%;
+    }
+
+    /* CV Document Paper Presentation */
+    .cv-paper-wrapper {
+      width: 100%;
+      max-width: 920px;
+      margin: 1.75rem auto 3rem;
+      padding: 0 1rem;
+      box-sizing: border-box;
+    }
+
+    .cv-standalone-paper {
+      background: var(--cv-paper-bg);
+      border-radius: 14px;
+      border: 1px solid var(--cv-border-color);
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.28), 0 2px 8px rgba(0, 0, 0, 0.15);
+      padding: clamp(1.5rem, 3.8vw, 3rem);
+      box-sizing: border-box;
+    }
+
+    [data-theme="light"] .cv-standalone-paper {
+      background: #ffffff;
+      box-shadow: 0 12px 36px rgba(0, 0, 0, 0.08), 0 1px 4px rgba(0, 0, 0, 0.04);
+    }
+
+    /* Lightbox Modal */
+    .cv-lightbox {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.85);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      z-index: 10000;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+    }
+
+    .cv-lightbox.open {
+      display: flex;
+    }
+
+    .cv-lightbox img {
+      max-width: 90vw;
+      max-height: 85vh;
+      border-radius: 12px;
+      border: 2px solid rgba(255, 255, 255, 0.3);
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
+      object-fit: contain;
+    }
+
+    .cv-lightbox-close {
+      position: absolute;
+      top: 1.5rem;
+      right: 1.5rem;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.15);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      color: #ffffff;
+      font-size: 1.25rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    .cv-lightbox-close:hover {
+      background: rgba(255, 255, 255, 0.3);
+    }
+
+    /* Print Styles: Exact match with Print CV */
+    @media print {
+      html, body, body.cv-page-body {
+        background: #ffffff !important;
+        color: #1e293b !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+      }
+
+      .cv-top-toolbar,
+      .cv-lightbox,
+      .toast-notification {
+        display: none !important;
+      }
+
+      .cv-paper-wrapper {
+        margin: 0 !important;
+        padding: 0 !important;
+        max-width: 100% !important;
+        width: 100% !important;
+        display: block !important;
+        visibility: visible !important;
+      }
+
+      .cv-standalone-paper,
+      .resume-paper {
+        background: #ffffff !important;
+        border: none !important;
+        box-shadow: none !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        border-radius: 0 !important;
+        width: 100% !important;
+        display: block !important;
+        visibility: visible !important;
+      }
+
+      .resume-paper,
+      .resume-paper * {
+        visibility: visible !important;
+      }
+
+      @page {
+        size: A4 portrait;
+        margin: 10mm 12mm 10mm 12mm;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .cv-toolbar-inner {
+        flex-direction: column;
+        align-items: stretch;
+      }
+      .cv-toolbar-actions {
+        justify-content: center;
+      }
+      .cv-tool-btn {
+        flex: 1 1 calc(50% - 0.5rem);
+        font-size: 0.76rem;
+        padding: 0.45rem 0.6rem;
+      }
+    }
+  </style>
+</head>
+<body class="cv-page-body">
+
+  <!-- Top Executive Action Toolbar -->
+  <header class="cv-top-toolbar">
+    <div class="cv-toolbar-inner">
+      <a href="index.html" class="cv-toolbar-brand" title="Return to Portfolio">
+        <div class="logo-badge" style="border-radius: 50%; overflow: hidden; padding: 0;">
+          <img src="profile.jpg" alt="Mohammad Shjjad Patwary" style="width:100%;height:100%;object-fit:cover;object-position:center 10%;display:block;" />
+        </div>
+        <span>Mohammad Shjjad Patwary</span>
+      </a>
+
+        <div class="cv-dropdown-wrapper">
+          <button class="cv-tool-btn btn-primary cv-dropdown-toggle" id="cv-dl-btn" type="button" aria-expanded="false" aria-haspopup="true" title="Download Official Executive CV (PDF)">
+            <i class="fas fa-download"></i> <span>Download PDF</span> <i class="fas fa-chevron-down cv-caret"></i>
+          </button>
+          <div class="cv-dropdown-menu" id="cv-dropdown">
+            <div class="cv-dropdown-header">
+              <div class="cv-dropdown-title-group">
+                <i class="fas fa-file-arrow-down"></i>
+                <span class="cv-dropdown-title">Download CV</span>
+              </div>
+              <button type="button" class="cv-dropdown-close-btn" aria-label="Close menu" title="Close">
+                <i class="fas fa-xmark"></i>
+              </button>
+            </div>
+            <a href="Mohammad_Shjjad_Patwary_Executive_CV.pdf" download="Mohammad_Shjjad_Patwary_Executive_CV.pdf" class="cv-dropdown-item direct-download-link" id="cv-with-photo">
+              <i class="fas fa-id-badge"></i>
+              <div class="dropdown-item-text">
+                <strong>With Photo</strong>
+                <span>Executive format with portrait</span>
+              </div>
+            </a>
+            <a href="Mohammad_Shjjad_Patwary_Executive_CV_No_Photo.pdf" download="Mohammad_Shjjad_Patwary_Executive_CV_No_Photo.pdf" class="cv-dropdown-item direct-download-link" id="cv-no-photo">
+              <i class="fas fa-file-alt"></i>
+              <div class="dropdown-item-text">
+                <strong>Without Photo</strong>
+                <span>ATS-friendly clean format</span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <button class="cv-tool-btn btn-secondary" onclick="printCleanCv()" title="Print CV (A4 ATS Standard)">
+          <i class="fas fa-print"></i> Print CV
+        </button>
+        <a href="index.html" class="cv-tool-btn btn-secondary" title="View Full Interactive Portfolio">
+          <i class="fas fa-arrow-left"></i> Portfolio
+        </a>
+        <button class="cv-tool-btn btn-secondary btn-theme" id="cv-theme-toggle" aria-label="Toggle Theme">
+          <i class="fas fa-circle-half-stroke"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Document Paper Container -->
+  <div class="cv-paper-wrapper">
+    <div class="cv-standalone-paper resume-paper" id="printable-resume">
+
+      <!-- Resume Header -->
+      <div class="cv-header">
+        <div class="cv-header-flex">
+          <div class="cv-name-col">
+            <h1 class="cv-name">Mohammad Shjjad Patwary</h1>
+            <p class="cv-tagline">Manager – Operations, Corporate Admin, IT &amp; Inventory &bull; 10+ Years Professional Track Record</p>
+            <div class="cv-meta-links">
+              <span><i class="fas fa-envelope"></i> shjjadpatwary@gmail.com</span>
+              <a href="https://wa.me/8801737908116" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> +880 1737 908116 (Phone &amp; WhatsApp)</a>
+            </div>
+          </div>
+          <div class="cv-avatar-col">
+            <button class="cv-avatar-btn" id="cv-avatar-btn" type="button" aria-label="View Full Portrait" title="Click to view full portrait">
+              <img src="profile.jpg" alt="Mohammad Shjjad Patwary" class="cv-avatar-img" />
+              <span class="cv-avatar-zoom-badge" aria-hidden="true"><i class="fas fa-magnifying-glass-plus"></i></span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Professional Summary -->
+      <div class="cv-section">
+        <h3 class="cv-section-title"><i class="fas fa-user-tie"></i> Professional Summary</h3>
+        <p class="cv-text">
+          Results-driven Operations, Corporate Administration &amp; IT Manager with 10+ years of comprehensive expertise leading corporate administrative governance, warehouse inventory synchronization, retail POS deployments, and e-commerce systems. Proven track record in fixed asset accountability, vendor procurement &amp; contract negotiations, biometric attendance SOPs, and cross-channel stock reconciliation, delivering high operational accuracy, cost efficiency, and administrative precision through technology-driven solutions.
+        </p>
+      </div>
+
+      <!-- Core Competencies -->
+      <div class="cv-section">
+        <h3 class="cv-section-title"><i class="fas fa-layer-group"></i> Core Competencies</h3>
+        <div class="cv-competencies-grid">
+          <div class="cv-competency-item"><i class="fas fa-check-circle"></i> Corporate Office Administration &amp; SOPs</div>
+          <div class="cv-competency-item"><i class="fas fa-check-circle"></i> Fixed Asset Registers &amp; Audit Governance</div>
+          <div class="cv-competency-item"><i class="fas fa-check-circle"></i> Vendor Procurement &amp; Rate Negotiations</div>
+          <div class="cv-competency-item"><i class="fas fa-check-circle"></i> Biometric Attendance &amp; Admin HR Records</div>
+          <div class="cv-competency-item"><i class="fas fa-check-circle"></i> Facility Operations &amp; CCTV Surveillance</div>
+          <div class="cv-competency-item"><i class="fas fa-check-circle"></i> Warehouse &amp; Store Operations Management</div>
+          <div class="cv-competency-item"><i class="fas fa-check-circle"></i> POS &amp; Omnichannel Inventory Integration</div>
+          <div class="cv-competency-item"><i class="fas fa-check-circle"></i> Inventory Planning, Stock Control &amp; GRN</div>
+          <div class="cv-competency-item"><i class="fas fa-check-circle"></i> Stock Reconciliation &amp; Cycle Discrepancy Audits</div>
+          <div class="cv-competency-item"><i class="fas fa-check-circle"></i> SKU Architecture &amp; Barcode Management</div>
+          <div class="cv-competency-item"><i class="fas fa-check-circle"></i> Order Management Systems (OMS) &amp; Logistics</div>
+          <div class="cv-competency-item"><i class="fas fa-check-circle"></i> Retail POS Systems Deployment &amp; Training</div>
+          <div class="cv-competency-item"><i class="fas fa-check-circle"></i> IT Equipment Procurement &amp; Technical Support</div>
+          <div class="cv-competency-item"><i class="fas fa-check-circle"></i> Website Administration &amp; Internal SEO</div>
+          <div class="cv-competency-item"><i class="fas fa-check-circle"></i> Customer Order Processing &amp; Tracking</div>
+          <div class="cv-competency-item"><i class="fas fa-check-circle"></i> Data Reporting &amp; Operational Analytics</div>
+        </div>
+      </div>
+
+      <!-- Professional Experience -->
+      <div class="cv-section">
+        <h3 class="cv-section-title"><i class="fas fa-briefcase"></i> Professional Experience</h3>
+
+        <!-- Role 1 -->
+        <div class="cv-job">
+          <div class="cv-job-header">
+            <span class="cv-job-title">1. Manager – Operations, Corporate Admin, IT &amp; Inventory</span>
+            <span class="cv-job-date">May 2024 – Apr 2026</span>
+          </div>
+          <div class="cv-job-company">Anzaar &bull; Dhaka, Bangladesh</div>
+          <ul class="cv-bullet-list">
+            <li>Direct day-to-day administrative operations, IT procurement, facility upkeep, and inventory synchronization across multi-branch retail network.</li>
+            <li>Formulate administrative standard operating procedures (SOPs), vendor service contracts, and executive reporting workflows.</li>
+            <li>Manage end-to-end inventory lifecycle including stock receiving, transfers, cycle counting, and variance reconciliation.</li>
+            <li>Synchronize physical warehouse stock, multi-branch POS counters, and e-commerce storefront with strict zero-variance protocols.</li>
+            <li>Standardize 2,000+ SKU product catalog with barcode label systems and taxonomy structures, accelerating upload speed by 40%.</li>
+            <li>Deploy and maintain retail POS systems across outlets, providing staff training and ensuring 100% system uptime.</li>
+            <li>Coordinate IT hardware procurement, office workstations, LAN infrastructure, and technical support.</li>
+            <li>Oversee online order processing workflows, customer fulfillment, and accurate tracking systems.</li>
+          </ul>
+
+          <!-- Key Achievements -->
+          <div class="cv-achievements-box">
+            <div class="cv-achievements-title"><i class="fas fa-trophy"></i> Key Achievements</div>
+            <ul class="cv-achievements-grid">
+              <li>Maintained 95%+ inventory accuracy across warehouse &amp; retail branches</li>
+              <li>Reduced stock mismatch by 30%+ through strict GRN audit cycles</li>
+              <li>Managed 2,000+ SKUs efficiently with barcode catalog standards</li>
+              <li>Improved order fulfillment speed &amp; dispatch turnaround by 40%</li>
+              <li>Ensured 100% stable POS &amp; IT infrastructure uptime during high-volume campaigns</li>
+              <li>Standardized administrative vendor procurement &amp; equipment records</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Role 2 -->
+        <div class="cv-job">
+          <div class="cv-job-header">
+            <span class="cv-job-title">2. Freelance Media Buyer – Google Ads</span>
+            <span class="cv-job-date">Mar 2022 – Apr 2024</span>
+          </div>
+          <div class="cv-job-company">Independent Consulting &bull; Remote</div>
+          <ul class="cv-bullet-list">
+            <li>Managed Google Ads acquisition campaigns including keyword research, audience targeting, and budget administration.</li>
+            <li>Analyzed campaign performance data, optimized advertising expenditures, and improved marketing ROI.</li>
+            <li>Executed data-driven audience segmentation and keyword bidding optimization to maximize returns.</li>
+          </ul>
+        </div>
+
+        <!-- Formal Two-Page CV Print Boundary -->
+        <div class="cv-page-break" aria-hidden="true"></div>
+
+        <!-- Role 3 -->
+        <div class="cv-job">
+          <div class="cv-job-header">
+            <span class="cv-job-title">3. Admin Operations &amp; Inventory Executive</span>
+            <span class="cv-job-date">Apr 2018 – Dec 2021</span>
+          </div>
+          <div class="cv-job-company">Hive Interiors &bull; Dhaka, Bangladesh</div>
+          <ul class="cv-bullet-list">
+            <li>Administered complete corporate office operations, facilities management, executive correspondence, and administrative documentation.</li>
+            <li>Governed fixed asset registers, architectural raw material samples, and office resources with 100% audit compliance.</li>
+            <li>Managed biometric employee attendance systems, leave administration, HR documentation, and staff ID credential protocols.</li>
+            <li>Directed vendor procurement cycles, contractor negotiations, purchase orders, and accounts payable invoice vetting.</li>
+            <li>Supervised corporate facility infrastructure, 24/7 CCTV surveillance networks, workstation setups, and office LAN connectivity.</li>
+            <li>Provided comprehensive administrative and IT support for office software and operational systems.</li>
+          </ul>
+        </div>
+
+        <!-- Role 4 -->
+        <div class="cv-job">
+          <div class="cv-job-header">
+            <span class="cv-job-title">4. Inventory Support &amp; Admin Executive</span>
+            <span class="cv-job-date">Mar 2014 – Mar 2018</span>
+          </div>
+          <div class="cv-job-company">NS Corporation Ltd. &bull; Dhaka, Bangladesh</div>
+          <ul class="cv-bullet-list">
+            <li>Maintained corporate administrative records, commercial dispatch files, resource tracking, and logistics documentation.</li>
+            <li>Prepared daily and weekly stock balance sheets, discrepancy audits, and operational reports for executive management.</li>
+            <li>Conducted receiving dock inspections, verifying supplier packing lists, purchase orders, and binning compliance.</li>
+            <li>Managed office reporting systems, cross-departmental coordination, and data verification tasks.</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Education -->
+      <div class="cv-section">
+        <h3 class="cv-section-title"><i class="fas fa-graduation-cap"></i> Education</h3>
+        <div class="cv-edu-row">
+          <div>
+            <strong>MBA – Marketing &amp; International Business</strong>
+            <p>International Islamic University Chittagong (IIUC)</p>
+          </div>
+          <div class="cv-edu-meta"><strong>CGPA: 3.68 / 4.00</strong></div>
+        </div>
+        <div class="cv-edu-row">
+          <div>
+            <strong>BBA – Marketing</strong>
+            <p>International Islamic University Chittagong (IIUC)</p>
+          </div>
+          <div class="cv-edu-meta"><strong>CGPA: 3.78 / 4.00</strong></div>
+        </div>
+        <div class="cv-edu-row">
+          <div>
+            <strong>HSC – Business Studies</strong>
+            <p>Comilla Cantonment College</p>
+          </div>
+          <div class="cv-edu-meta"><span>Comilla Board</span></div>
+        </div>
+        <div class="cv-edu-row">
+          <div>
+            <strong>SSC – Business Studies</strong>
+            <p>Comilla Cantonment High School</p>
+          </div>
+          <div class="cv-edu-meta"><span>Comilla Board</span></div>
+        </div>
+      </div>
+
+      <!-- Internship Experience -->
+      <div class="cv-section">
+        <h3 class="cv-section-title"><i class="fas fa-briefcase-blank"></i> Internship Experience</h3>
+        <div class="cv-job">
+          <div class="cv-job-header">
+            <span class="cv-job-title">Intern (Akij Food &amp; Beverage Ltd.)</span>
+            <span class="cv-job-date">Oct 2012 – Dec 2012</span>
+          </div>
+          <p class="cv-text">
+            Conducted research and data analysis for the Research Department as an Intern.
+          </p>
+        </div>
+      </div>
+
+      <!-- Training & Certifications -->
+      <div class="cv-section">
+        <h3 class="cv-section-title"><i class="fas fa-certificate"></i> Training &amp; Certifications</h3>
+        <ul class="cv-cert-list">
+          <li><strong>National Skill Standard Basic Training:</strong> Bangladesh Technical Education Board (2015)</li>
+          <li><strong>Preparing Tax Return by Individual Taxpayer:</strong> Pencil Box (2019)</li>
+          <li><strong>Import Business Training:</strong> Import Business BD (2018)</li>
+        </ul>
+      </div>
+
+      <!-- Languages -->
+      <div class="cv-section">
+        <h3 class="cv-section-title"><i class="fas fa-language"></i> Languages</h3>
+        <div class="cv-lang-grid">
+          <div class="cv-lang-card">
+            <span class="cv-lang-name"><i class="fas fa-comment-dots"></i> Bangla</span>
+            <span class="cv-lang-level">Native</span>
+          </div>
+          <div class="cv-lang-card">
+            <span class="cv-lang-name"><i class="fas fa-globe"></i> English</span>
+            <span class="cv-lang-level">Professional Working Proficiency</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- References -->
+      <div class="cv-section">
+        <h3 class="cv-section-title"><i class="fas fa-address-book"></i> References</h3>
+        <div class="cv-ref-card">
+          <i class="fas fa-shield-check"></i>
+          <div>
+            <strong>Available upon request</strong>
+            <p>Professional, operational, and academic references available upon executive request.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Portrait Lightbox -->
+  <div class="cv-lightbox" id="lightbox">
+    <button class="cv-lightbox-close" id="lightbox-close" aria-label="Close Portrait"><i class="fas fa-xmark"></i></button>
+    <img src="profile.jpg" alt="Mohammad Shjjad Patwary" />
+  </div>
+
+  <div class="toast-notification" id="toast" role="status" aria-live="polite"></div>
+
+  <script>
+    // Theme Management
+    const themeToggle = document.getElementById('cv-theme-toggle');
+    function applyTheme(theme) {
+      document.documentElement.setAttribute('data-theme', theme);
+      localStorage.setItem('theme', theme);
+    }
+    const savedTheme = localStorage.getItem('theme') || 'dark';
+    applyTheme(savedTheme);
+
+    themeToggle?.addEventListener('click', () => {
+      const current = document.documentElement.getAttribute('data-theme') || 'dark';
+      applyTheme(current === 'dark' ? 'light' : 'dark');
+    });
+
+    // Toast
+    function showToast(msg) {
+      const toast = document.getElementById('toast');
+      if (!toast) return;
+      toast.textContent = msg;
+      toast.classList.add('show');
+      setTimeout(() => toast.classList.remove('show'), 2600);
+    }
+
+
+    // CV Download Dropdown
+    const cvDropdownToggle = document.getElementById('cv-dl-btn');
+    const cvDropdownWrapper = cvDropdownToggle?.closest('.cv-dropdown-wrapper');
+    const cvDropdownClose = cvDropdownWrapper?.querySelector('.cv-dropdown-close-btn');
+
+    cvDropdownToggle?.addEventListener('click', (e) => {
+      e.stopPropagation();
+      cvDropdownWrapper?.classList.remove('dismissed');
+      cvDropdownWrapper?.classList.toggle('open');
+      cvDropdownToggle.setAttribute('aria-expanded', cvDropdownWrapper?.classList.contains('open') ? 'true' : 'false');
+    });
+
+    cvDropdownClose?.addEventListener('click', (e) => {
+      e.stopPropagation();
+      cvDropdownWrapper?.classList.remove('open');
+      cvDropdownWrapper?.classList.add('dismissed');
+      cvDropdownToggle?.setAttribute('aria-expanded', 'false');
+    });
+
+    cvDropdownWrapper?.addEventListener('mouseleave', () => {
+      cvDropdownWrapper.classList.remove('dismissed');
+    });
+
+    document.addEventListener('click', (e) => {
+      if (!e.target.closest('.cv-dropdown-wrapper')) {
+        cvDropdownWrapper?.classList.remove('open');
+        cvDropdownToggle?.setAttribute('aria-expanded', 'false');
+      }
+    });
+
+    function printCleanCv() {
+      const orig = document.title;
+      document.title = ' ';
+      window.print();
+      setTimeout(() => { document.title = orig; }, 1200);
+    }
+
+    // Lightbox
+    const avatarBtn = document.getElementById('cv-avatar-btn');
+    const lightbox = document.getElementById('lightbox');
+    const lightboxClose = document.getElementById('lightbox-close');
+
+    avatarBtn?.addEventListener('click', (e) => {
+      e.preventDefault();
+      lightbox?.classList.add('open');
+    });
+    lightboxClose?.addEventListener('click', () => lightbox?.classList.remove('open'));
+    lightbox?.addEventListener('click', (e) => {
+      if (e.target === lightbox) lightbox.classList.remove('open');
+    });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        lightbox?.classList.remove('open');
+        cvDropdownWrapper?.classList.remove('open');
+      }
+    });
+  </script>
+</body>
+</html>
